@@ -1,0 +1,243 @@
+#include "/home/turtlebot2/asr_ws/devel/lib/asr_userword/stdio.h"
+#include "/home/turtlebot2/asr_ws/devel/lib/asr_userword/string.h"
+#include "/home/turtlebot2/asr_ws/devel/lib/asr_userword/stdlib.h"
+#include "/home/turtlebot2/asr_ws/devel/lib/asr_userword/unistd.h"
+
+//#include "../../include/qisr.h"
+//#include "../../include/msp_cmn.h"
+//#include "../../include/msp_errors.h"
+
+//#include "ros/ros.h"
+#include "/home/turtlebot2/asr_ws/devel/lib/asr_userword/qisr.h"
+#include "/home/turtlebot2/asr_ws/devel/lib/asr_userword/msp_cmn.h"
+#include "/home/turtlebot2/asr_ws/devel/lib/asr_userword/msp_errors.h"
+//#include "/home/turtlebot2/asr_ws/devel/lib/asr_userword/libmsc.so"
+
+
+#define MAX_KEYWORD_LEN 4096
+
+
+char GrammarID[128];
+
+const char*  get_audio_file(void)
+{
+	char key = 0;
+	while(key != 27)//按Esc则退出
+	{
+		system("cls");//清屏
+		//printf("请选择音频文件：\n");
+		//printf("1.055165309093\n");
+		//printf("2.18012345678\n");
+		//printf("3.邮编230088\n");
+		//printf("4.安徽科大讯飞信息科技股份有限公司\n");
+		//printf("注意：第三条的音频是文字和数字的混合，文字部分也在尽可能地向数字靠，置信度低。\n      第四条没有数字，被认为是噪音。\n");
+
+                printf("请选择音频文件：\n");
+                printf("1. 过来\n");  
+                printf("2. 黄山旅游\n");
+                printf("3. 南京高科\n");
+                printf("4. 机器人\n");
+                printf("5. 前进\n"); 
+                printf("6. 向左转\n");            
+		key = getchar();
+		switch(key)
+		{
+		case '1':
+			//printf("1.055165309093\n");
+			//return "wav/iflytek05.wav";                                   //iflytek05对应的音频内容“055165309093”
+                        printf("过来\n");  
+                        return "wav/过来.wav"; 
+		case '2':
+			//printf("2.18012345678\n");
+		       //return "wav/iflytek06.wav";                                   //iflytek06对应的音频内容“1890123456789”
+                        printf("黄山旅游\n");
+                        return "wav/黄山旅游.wav"; 
+		case '3':
+			//printf("3.邮编230088\n");
+		       //return "wav/iflytek07.wav";                                   //iflytek07对应的音频内容“邮编230008”
+                        printf("南京高科\n");
+                        return "wav/南京高科.wav";
+		case '4':
+			//printf("4.安徽科大讯飞信息科技股份有限公司\n");
+		       // return "wav/iflytek08.wav";                                   //iflytek08对应的音频内容“安徽科大讯飞信息科技股份有限公司”
+                          printf("机器人\n");
+                          return "wav/机器人.wav";
+                case '5':
+                         printf("前进\n");
+                         return "wav/前进.wav";
+                case '6':
+                         printf("向左转\n");
+                         return "wav/向左转.wav";
+		default:
+			continue;
+		}
+	}
+	exit(0);
+	return NULL;
+}
+
+const char* get_grammar( const char* filename )
+{
+	int ret = MSP_SUCCESS;
+	int file_len = 0;
+	char* grammar = NULL;
+	FILE *fp=NULL; 
+	fp=fopen(filename,"rb");
+	if (NULL == fp)
+	{
+		printf("get_grammar| open file \"%s\" failed.\n",filename ? filename : "");
+		return NULL;
+	}
+	fseek(fp,0L,SEEK_END);
+	file_len=ftell(fp);
+	fseek(fp,0L,SEEK_SET);
+
+	grammar = (char*)malloc(file_len+1); //从文件中读取语法，注意文本编码为GB2312
+	fread((void*)grammar,1,file_len,fp);
+	grammar[file_len]='\0'; //字符串收尾
+	fclose(fp);
+	return grammar;
+}
+
+void release_grammar(const char** grammar)
+{
+	if (*grammar)
+	{
+		free((void*)*grammar);
+		*grammar = NULL;
+	}	
+}
+
+int run_asr(const char* asrfile ,  const char* param , const char* grammar)
+{
+	char rec_result[1024*4] = {0};
+	const char *sessionID;
+	FILE *f_pcm = NULL;
+	char *pPCM = NULL;
+	int lastAudio = 0 ;
+	int audStat = 2 ;
+	int epStatus = 0;
+	int recStatus = 0 ;
+	long pcmCount = 0;
+	long pcmSize = 0;
+	int ret = 0 ;
+	sessionID = QISRSessionBegin(NULL, param, &ret); //asr
+	if(ret !=0)
+	{
+		printf("QISRSessionBegin Failed,ret=%d\n",ret);
+	}
+
+	ret = QISRGrammarActivate(sessionID, grammar, NULL, 0);//可以选择在QISRSessionBegin第一个参数传入grammar，亦可通过QISRGrammarActivate激活语法，可以多次调用QISRGrammarActivate，激活多个语法。
+	if(ret !=0)
+	{
+		printf("QISRGrammarActivate Failed,ret=%d\n",ret);
+	}
+    f_pcm = fopen(asrfile, "rb");
+	if (NULL != f_pcm) {
+		fseek(f_pcm, 0, SEEK_END);
+		pcmSize = ftell(f_pcm);
+		fseek(f_pcm, 0, SEEK_SET);
+		pPCM = (char *)malloc(pcmSize);
+		fread((void *)pPCM, pcmSize, 1, f_pcm);
+		fclose(f_pcm);
+		f_pcm = NULL;
+	}
+	while (1) {
+		unsigned int len = 6400;
+              unsigned int audio_len = 6400;
+		if (pcmSize < 12800) {
+			len = pcmSize;
+			lastAudio = 1;
+		}
+		audStat = 2;
+		if (pcmCount == 0)
+			audStat = 1;
+		if (0) {
+			if (audStat == 1)
+				audStat = 5;
+			else
+				audStat = 4;
+		}
+		if (len<=0)
+		{
+			break;
+		}
+            
+		printf("\ncsid=%s,count=%d,aus=%d,",sessionID,pcmCount/audio_len,audStat);
+		ret = QISRAudioWrite(sessionID, (const void *)&pPCM[pcmCount], len, audStat, &epStatus, &recStatus);
+		printf("eps=%d,rss=%d,ret=%d",epStatus,recStatus,ret);
+		if (ret != 0)
+			break;
+		pcmCount += (long)len;
+		pcmSize -= (long)len;
+		if (recStatus == 0) {
+			const char *rslt = QISRGetResult(sessionID, &recStatus, 0, &ret);
+			if(ret !=0)
+			{
+				printf("QISRGetResult Failed,ret=%d\n",ret);
+				break;
+			}
+			if (NULL != rslt)
+				strcat(rec_result,rslt);
+		}
+		if (epStatus == MSP_EP_AFTER_SPEECH)
+			break;
+		usleep(150000);
+	}
+	ret=QISRAudioWrite(sessionID, (const void *)NULL, 0, 4, &epStatus, &recStatus);
+	if (ret !=0)
+	{
+		printf("QISRAudioWrite Failed,ret=%d\n",ret);
+	}
+	free(pPCM);
+	pPCM = NULL;
+	while (recStatus != 5 && ret == 0) {
+		const char *rslt = QISRGetResult(sessionID, &recStatus, 0, &ret);
+		if (NULL != rslt)
+		{
+			strcat(rec_result,rslt);
+		}
+		usleep(150000);
+	}
+    ret=QISRSessionEnd(sessionID, NULL);
+	if(ret !=MSP_SUCCESS)
+	{
+		printf("QISRSessionEnd Failed, ret=%d\n",ret);
+	}	
+	printf("\n=============================================================\n");
+	printf("The result is: %s\n",rec_result);
+	printf("=============================================================\n");
+	usleep(100000);
+}
+
+int main(int argc, char* argv[])
+{
+	const char* login_config = "appid = 55b1aeb0, work_dir =   .  ";
+	const char* param = "rst=plain,rse=utf8,sub=asr,ssm=1,aue=speex-wb,auf=audio/L16;rate=16000,ent=sms16k";//注意sub=asr,16k音频aue=speex-wb，8k音频识别aue=speex，
+	const char* grammar = NULL;
+	int ret = 0 ;
+	char key = 0 ;
+	const char* asrfile = get_audio_file();
+	ret = MSPLogin(NULL, NULL, login_config);
+	if ( ret != MSP_SUCCESS )
+	{
+		printf("MSPLogin failed , Error code %d.\n",ret);
+		return 0 ;
+	}
+	grammar = get_grammar( "gm_continuous_digit.abnf" );
+	if(ret != MSP_SUCCESS)
+	{
+		printf("getExID with errorCode: %d \n", ret);
+		return 0;
+	}
+	ret = run_asr(asrfile, param, grammar);
+	if(ret != MSP_SUCCESS)
+	{
+		printf("run_asr with errorCode: %d \n", ret);
+		return 0;
+	}
+	release_grammar(&grammar);
+	MSPLogout();
+	return 0;
+}
+

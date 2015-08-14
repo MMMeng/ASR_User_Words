@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/turtlebot2/asr_ws/devel/setup.sh
