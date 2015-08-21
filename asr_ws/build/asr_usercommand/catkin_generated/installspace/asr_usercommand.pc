@@ -1,0 +1,8 @@
+prefix=/home/turtlebot2/asr_ws/install
+
+Name: asr_usercommand
+Description: Description of asr_usercommand
+Version: 0.0.0
+Cflags: -I/home/turtlebot2/asr_ws/install/include
+Libs: -L/home/turtlebot2/asr_ws/install/lib -lasr_usercommand
+Requires: roscpp rospy std_msgs message_runtime

@@ -230,7 +230,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  10
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -261,7 +261,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  11
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -286,572 +286,716 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory asr_userword
+# Directory level rules for directory asr_usercommand
 
 # Convenience name for "all" pass in the directory.
-asr_userword/all: asr_userword/CMakeFiles/asr_userword.dir/all
-asr_userword/all: asr_userword/CMakeFiles/asr_userword_generate_messages.dir/all
-.PHONY : asr_userword/all
+asr_usercommand/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all
+asr_usercommand/all: asr_usercommand/CMakeFiles/command_subscriber.dir/all
+asr_usercommand/all: asr_usercommand/CMakeFiles/user_command_client.dir/all
+asr_usercommand/all: asr_usercommand/CMakeFiles/user_command_server.dir/all
+.PHONY : asr_usercommand/all
 
 # Convenience name for "clean" pass in the directory.
-asr_userword/clean: asr_userword/CMakeFiles/asr_userword.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/asr_userword_gencpp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/asr_userword_generate_messages.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/asr_userword_genlisp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/asr_userword_genpy.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-asr_userword/clean: asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : asr_userword/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/command_subscriber.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/user_command_client.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/user_command_server.dir/clean
+.PHONY : asr_usercommand/clean
 
 # Convenience name for "preinstall" pass in the directory.
-asr_userword/preinstall:
-.PHONY : asr_userword/preinstall
+asr_usercommand/preinstall:
+.PHONY : asr_usercommand/preinstall
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/asr_userword.dir
+# Target rules for target asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/asr_userword.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword.dir/build.make asr_userword/CMakeFiles/asr_userword.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword.dir/build.make asr_userword/CMakeFiles/asr_userword.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  1
-	@echo "Built target asr_userword"
-.PHONY : asr_userword/CMakeFiles/asr_userword.dir/all
+asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/build.make asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/build.make asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
+	@echo "Built target _asr_usercommand_generate_messages_check_deps_Command"
+.PHONY : asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/rule
+
+# Convenience name for target.
+_asr_usercommand_generate_messages_check_deps_Command: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/rule
+.PHONY : _asr_usercommand_generate_messages_check_deps_Command
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/build.make asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/build.make asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/build.make asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
+	@echo "Built target _asr_usercommand_generate_messages_check_deps_UserCommand"
+.PHONY : asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/rule
+
+# Convenience name for target.
+_asr_usercommand_generate_messages_check_deps_UserCommand: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/rule
+.PHONY : _asr_usercommand_generate_messages_check_deps_UserCommand
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/build.make asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
+	@echo "Built target asr_usercommand_gencpp"
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/rule
+
+# Convenience name for target.
+asr_usercommand_gencpp: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/rule
+.PHONY : asr_usercommand_gencpp
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
+	@echo "Built target asr_usercommand_generate_messages"
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all
 
 # Include target in all.
-all: asr_userword/CMakeFiles/asr_userword.dir/all
+all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/asr_userword.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/asr_userword.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/asr_userword.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/rule
 
 # Convenience name for target.
-asr_userword: asr_userword/CMakeFiles/asr_userword.dir/rule
-.PHONY : asr_userword
+asr_usercommand_generate_messages: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/rule
+.PHONY : asr_usercommand_generate_messages
 
 # clean rule for target.
-asr_userword/CMakeFiles/asr_userword.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword.dir/build.make asr_userword/CMakeFiles/asr_userword.dir/clean
-.PHONY : asr_userword/CMakeFiles/asr_userword.dir/clean
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/asr_userword.dir/clean
+clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/asr_userword_gencpp.dir
+# Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/asr_userword_gencpp.dir/all: asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/all
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_gencpp.dir/build.make asr_userword/CMakeFiles/asr_userword_gencpp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_gencpp.dir/build.make asr_userword/CMakeFiles/asr_userword_gencpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
-	@echo "Built target asr_userword_gencpp"
-.PHONY : asr_userword/CMakeFiles/asr_userword_gencpp.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  1 2
+	@echo "Built target asr_usercommand_generate_messages_cpp"
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/asr_userword_gencpp.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/asr_userword_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/asr_userword_gencpp.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-asr_userword_gencpp: asr_userword/CMakeFiles/asr_userword_gencpp.dir/rule
-.PHONY : asr_userword_gencpp
+asr_usercommand_generate_messages_cpp: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/rule
+.PHONY : asr_usercommand_generate_messages_cpp
 
 # clean rule for target.
-asr_userword/CMakeFiles/asr_userword_gencpp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_gencpp.dir/build.make asr_userword/CMakeFiles/asr_userword_gencpp.dir/clean
-.PHONY : asr_userword/CMakeFiles/asr_userword_gencpp.dir/clean
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/asr_userword_gencpp.dir/clean
+clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/asr_userword_generate_messages.dir
+# Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages.dir/all: asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/all
-asr_userword/CMakeFiles/asr_userword_generate_messages.dir/all: asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/all
-asr_userword/CMakeFiles/asr_userword_generate_messages.dir/all: asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/all
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages.dir/build
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  3 4
+	@echo "Built target asr_usercommand_generate_messages_lisp"
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+asr_usercommand_generate_messages_lisp: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/rule
+.PHONY : asr_usercommand_generate_messages_lisp
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  5 6 7 8
+	@echo "Built target asr_usercommand_generate_messages_py"
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/rule
+
+# Convenience name for target.
+asr_usercommand_generate_messages_py: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/rule
+.PHONY : asr_usercommand_generate_messages_py
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
-	@echo "Built target asr_userword_generate_messages"
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages.dir/all
+	@echo "Built target asr_usercommand_genlisp"
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/rule
+
+# Convenience name for target.
+asr_usercommand_genlisp: asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/rule
+.PHONY : asr_usercommand_genlisp
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
+	@echo "Built target asr_usercommand_genpy"
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/rule
+
+# Convenience name for target.
+asr_usercommand_genpy: asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/rule
+.PHONY : asr_usercommand_genpy
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/command_subscriber.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/command_subscriber.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  9
+	@echo "Built target command_subscriber"
+.PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/all
 
 # Include target in all.
-all: asr_userword/CMakeFiles/asr_userword_generate_messages.dir/all
+all: asr_usercommand/CMakeFiles/command_subscriber.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/command_subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/command_subscriber.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/asr_userword_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/rule
 
 # Convenience name for target.
-asr_userword_generate_messages: asr_userword/CMakeFiles/asr_userword_generate_messages.dir/rule
-.PHONY : asr_userword_generate_messages
+command_subscriber: asr_usercommand/CMakeFiles/command_subscriber.dir/rule
+.PHONY : command_subscriber
 
 # clean rule for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages.dir/clean
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages.dir/clean
+asr_usercommand/CMakeFiles/command_subscriber.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/asr_userword_generate_messages.dir/clean
+clean: asr_usercommand/CMakeFiles/command_subscriber.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir
+# Target rules for target asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/all: asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
-	@echo "Built target asr_userword_generate_messages_cpp"
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-asr_userword_generate_messages_cpp: asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/rule
-.PHONY : asr_userword_generate_messages_cpp
-
-# clean rule for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/clean
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir
-
-# All Build rule for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/all: asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
-	@echo "Built target asr_userword_generate_messages_lisp"
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-asr_userword_generate_messages_lisp: asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/rule
-.PHONY : asr_userword_generate_messages_lisp
-
-# clean rule for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/clean
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir
-
-# All Build rule for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/all: asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
-	@echo "Built target asr_userword_generate_messages_py"
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/rule
-
-# Convenience name for target.
-asr_userword_generate_messages_py: asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/rule
-.PHONY : asr_userword_generate_messages_py
-
-# clean rule for target.
-asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/clean
-.PHONY : asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target asr_userword/CMakeFiles/asr_userword_genlisp.dir
-
-# All Build rule for target.
-asr_userword/CMakeFiles/asr_userword_genlisp.dir/all: asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/all
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_genlisp.dir/build.make asr_userword/CMakeFiles/asr_userword_genlisp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_genlisp.dir/build.make asr_userword/CMakeFiles/asr_userword_genlisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
-	@echo "Built target asr_userword_genlisp"
-.PHONY : asr_userword/CMakeFiles/asr_userword_genlisp.dir/all
-
-# Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/asr_userword_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/asr_userword_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/asr_userword_genlisp.dir/rule
-
-# Convenience name for target.
-asr_userword_genlisp: asr_userword/CMakeFiles/asr_userword_genlisp.dir/rule
-.PHONY : asr_userword_genlisp
-
-# clean rule for target.
-asr_userword/CMakeFiles/asr_userword_genlisp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_genlisp.dir/build.make asr_userword/CMakeFiles/asr_userword_genlisp.dir/clean
-.PHONY : asr_userword/CMakeFiles/asr_userword_genlisp.dir/clean
-
-# clean rule for target.
-clean: asr_userword/CMakeFiles/asr_userword_genlisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target asr_userword/CMakeFiles/asr_userword_genpy.dir
-
-# All Build rule for target.
-asr_userword/CMakeFiles/asr_userword_genpy.dir/all: asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/all
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_genpy.dir/build.make asr_userword/CMakeFiles/asr_userword_genpy.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_genpy.dir/build.make asr_userword/CMakeFiles/asr_userword_genpy.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
-	@echo "Built target asr_userword_genpy"
-.PHONY : asr_userword/CMakeFiles/asr_userword_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/asr_userword_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/asr_userword_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/asr_userword_genpy.dir/rule
-
-# Convenience name for target.
-asr_userword_genpy: asr_userword/CMakeFiles/asr_userword_genpy.dir/rule
-.PHONY : asr_userword_genpy
-
-# clean rule for target.
-asr_userword/CMakeFiles/asr_userword_genpy.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_genpy.dir/build.make asr_userword/CMakeFiles/asr_userword_genpy.dir/clean
-.PHONY : asr_userword/CMakeFiles/asr_userword_genpy.dir/clean
-
-# clean rule for target.
-clean: asr_userword/CMakeFiles/asr_userword_genpy.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir
-
-# All Build rule for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_cpp"
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_lisp"
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/build
+asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_py"
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/all
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/rule
+roscpp_generate_messages_py: asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/clean
+asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/clean
+clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+clean: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+clean: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+clean: asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_cpp"
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+std_msgs_generate_messages_cpp: asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : std_msgs_generate_messages_cpp
 
 # clean rule for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+clean: asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_lisp"
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_lisp: asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : std_msgs_generate_messages_lisp
 
 # clean rule for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+clean: asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/build
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_py"
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/all
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_py: asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+clean: asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/user_command_client.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/user_command_client.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_client.dir/build.make asr_usercommand/CMakeFiles/user_command_client.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_client.dir/build.make asr_usercommand/CMakeFiles/user_command_client.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  12
+	@echo "Built target user_command_client"
+.PHONY : asr_usercommand/CMakeFiles/user_command_client.dir/all
+
+# Include target in all.
+all: asr_usercommand/CMakeFiles/user_command_client.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/user_command_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/user_command_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/user_command_client.dir/rule
+
+# Convenience name for target.
+user_command_client: asr_usercommand/CMakeFiles/user_command_client.dir/rule
+.PHONY : user_command_client
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/user_command_client.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_client.dir/build.make asr_usercommand/CMakeFiles/user_command_client.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/user_command_client.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/user_command_client.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/user_command_server.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/user_command_server.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_server.dir/build.make asr_usercommand/CMakeFiles/user_command_server.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_server.dir/build.make asr_usercommand/CMakeFiles/user_command_server.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  13
+	@echo "Built target user_command_server"
+.PHONY : asr_usercommand/CMakeFiles/user_command_server.dir/all
+
+# Include target in all.
+all: asr_usercommand/CMakeFiles/user_command_server.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/user_command_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/user_command_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/user_command_server.dir/rule
+
+# Convenience name for target.
+user_command_server: asr_usercommand/CMakeFiles/user_command_server.dir/rule
+.PHONY : user_command_server
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/user_command_server.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_server.dir/build.make asr_usercommand/CMakeFiles/user_command_server.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/user_command_server.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/user_command_server.dir/clean
 .PHONY : clean
 
 #=============================================================================

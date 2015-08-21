@@ -241,108 +241,134 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named asr_userword
+# Target rules for targets named _asr_usercommand_generate_messages_check_deps_Command
 
 # Build rule for target.
-asr_userword: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword
-.PHONY : asr_userword
+_asr_usercommand_generate_messages_check_deps_Command: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _asr_usercommand_generate_messages_check_deps_Command
+.PHONY : _asr_usercommand_generate_messages_check_deps_Command
 
 # fast build rule for target.
-asr_userword/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword.dir/build.make asr_userword/CMakeFiles/asr_userword.dir/build
-.PHONY : asr_userword/fast
+_asr_usercommand_generate_messages_check_deps_Command/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/build.make asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/build
+.PHONY : _asr_usercommand_generate_messages_check_deps_Command/fast
 
 #=============================================================================
-# Target rules for targets named asr_userword_gencpp
+# Target rules for targets named _asr_usercommand_generate_messages_check_deps_UserCommand
 
 # Build rule for target.
-asr_userword_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword_gencpp
-.PHONY : asr_userword_gencpp
+_asr_usercommand_generate_messages_check_deps_UserCommand: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _asr_usercommand_generate_messages_check_deps_UserCommand
+.PHONY : _asr_usercommand_generate_messages_check_deps_UserCommand
 
 # fast build rule for target.
-asr_userword_gencpp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_gencpp.dir/build.make asr_userword/CMakeFiles/asr_userword_gencpp.dir/build
-.PHONY : asr_userword_gencpp/fast
+_asr_usercommand_generate_messages_check_deps_UserCommand/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/build.make asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/build
+.PHONY : _asr_usercommand_generate_messages_check_deps_UserCommand/fast
 
 #=============================================================================
-# Target rules for targets named asr_userword_generate_messages
+# Target rules for targets named asr_usercommand_gencpp
 
 # Build rule for target.
-asr_userword_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword_generate_messages
-.PHONY : asr_userword_generate_messages
+asr_usercommand_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand_gencpp
+.PHONY : asr_usercommand_gencpp
 
 # fast build rule for target.
-asr_userword_generate_messages/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages.dir/build
-.PHONY : asr_userword_generate_messages/fast
+asr_usercommand_gencpp/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/build
+.PHONY : asr_usercommand_gencpp/fast
 
 #=============================================================================
-# Target rules for targets named asr_userword_generate_messages_cpp
+# Target rules for targets named asr_usercommand_generate_messages
 
 # Build rule for target.
-asr_userword_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword_generate_messages_cpp
-.PHONY : asr_userword_generate_messages_cpp
+asr_usercommand_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand_generate_messages
+.PHONY : asr_usercommand_generate_messages
 
 # fast build rule for target.
-asr_userword_generate_messages_cpp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_cpp.dir/build
-.PHONY : asr_userword_generate_messages_cpp/fast
+asr_usercommand_generate_messages/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build
+.PHONY : asr_usercommand_generate_messages/fast
 
 #=============================================================================
-# Target rules for targets named asr_userword_generate_messages_lisp
+# Target rules for targets named asr_usercommand_generate_messages_cpp
 
 # Build rule for target.
-asr_userword_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword_generate_messages_lisp
-.PHONY : asr_userword_generate_messages_lisp
+asr_usercommand_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand_generate_messages_cpp
+.PHONY : asr_usercommand_generate_messages_cpp
 
 # fast build rule for target.
-asr_userword_generate_messages_lisp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_lisp.dir/build
-.PHONY : asr_userword_generate_messages_lisp/fast
+asr_usercommand_generate_messages_cpp/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build
+.PHONY : asr_usercommand_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named asr_userword_generate_messages_py
+# Target rules for targets named asr_usercommand_generate_messages_lisp
 
 # Build rule for target.
-asr_userword_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword_generate_messages_py
-.PHONY : asr_userword_generate_messages_py
+asr_usercommand_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand_generate_messages_lisp
+.PHONY : asr_usercommand_generate_messages_lisp
 
 # fast build rule for target.
-asr_userword_generate_messages_py/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/build.make asr_userword/CMakeFiles/asr_userword_generate_messages_py.dir/build
-.PHONY : asr_userword_generate_messages_py/fast
+asr_usercommand_generate_messages_lisp/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/build
+.PHONY : asr_usercommand_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named asr_userword_genlisp
+# Target rules for targets named asr_usercommand_generate_messages_py
 
 # Build rule for target.
-asr_userword_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword_genlisp
-.PHONY : asr_userword_genlisp
+asr_usercommand_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand_generate_messages_py
+.PHONY : asr_usercommand_generate_messages_py
 
 # fast build rule for target.
-asr_userword_genlisp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_genlisp.dir/build.make asr_userword/CMakeFiles/asr_userword_genlisp.dir/build
-.PHONY : asr_userword_genlisp/fast
+asr_usercommand_generate_messages_py/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build
+.PHONY : asr_usercommand_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named asr_userword_genpy
+# Target rules for targets named asr_usercommand_genlisp
 
 # Build rule for target.
-asr_userword_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 asr_userword_genpy
-.PHONY : asr_userword_genpy
+asr_usercommand_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand_genlisp
+.PHONY : asr_usercommand_genlisp
 
 # fast build rule for target.
-asr_userword_genpy/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/asr_userword_genpy.dir/build.make asr_userword/CMakeFiles/asr_userword_genpy.dir/build
-.PHONY : asr_userword_genpy/fast
+asr_usercommand_genlisp/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/build
+.PHONY : asr_usercommand_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named asr_usercommand_genpy
+
+# Build rule for target.
+asr_usercommand_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand_genpy
+.PHONY : asr_usercommand_genpy
+
+# fast build rule for target.
+asr_usercommand_genpy/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/build
+.PHONY : asr_usercommand_genpy/fast
+
+#=============================================================================
+# Target rules for targets named command_subscriber
+
+# Build rule for target.
+command_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 command_subscriber
+.PHONY : command_subscriber
+
+# fast build rule for target.
+command_subscriber/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/build
+.PHONY : command_subscriber/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -354,7 +380,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -367,7 +393,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -380,7 +406,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/build.make asr_userword/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -393,7 +419,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -406,7 +432,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -419,7 +445,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make asr_userword/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -432,7 +458,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -445,7 +471,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -458,8 +484,34 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/build.make asr_userword/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named user_command_client
+
+# Build rule for target.
+user_command_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 user_command_client
+.PHONY : user_command_client
+
+# fast build rule for target.
+user_command_client/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_client.dir/build.make asr_usercommand/CMakeFiles/user_command_client.dir/build
+.PHONY : user_command_client/fast
+
+#=============================================================================
+# Target rules for targets named user_command_server
+
+# Build rule for target.
+user_command_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 user_command_server
+.PHONY : user_command_server
+
+# fast build rule for target.
+user_command_server/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_server.dir/build.make asr_usercommand/CMakeFiles/user_command_server.dir/build
+.PHONY : user_command_server/fast
 
 # Help Target
 help:
@@ -481,14 +533,16 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... asr_userword"
-	@echo "... asr_userword_gencpp"
-	@echo "... asr_userword_generate_messages"
-	@echo "... asr_userword_generate_messages_cpp"
-	@echo "... asr_userword_generate_messages_lisp"
-	@echo "... asr_userword_generate_messages_py"
-	@echo "... asr_userword_genlisp"
-	@echo "... asr_userword_genpy"
+	@echo "... _asr_usercommand_generate_messages_check_deps_Command"
+	@echo "... _asr_usercommand_generate_messages_check_deps_UserCommand"
+	@echo "... asr_usercommand_gencpp"
+	@echo "... asr_usercommand_generate_messages"
+	@echo "... asr_usercommand_generate_messages_cpp"
+	@echo "... asr_usercommand_generate_messages_lisp"
+	@echo "... asr_usercommand_generate_messages_py"
+	@echo "... asr_usercommand_genlisp"
+	@echo "... asr_usercommand_genpy"
+	@echo "... command_subscriber"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -498,6 +552,8 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... user_command_client"
+	@echo "... user_command_server"
 .PHONY : help
 
 

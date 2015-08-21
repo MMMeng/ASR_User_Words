@@ -1,2 +1,2 @@
-asr_userword
+asr_usercommand
 -DCATKIN_DEVEL_PREFIX=/home/turtlebot2/asr_ws/devel -DCMAKE_INSTALL_PREFIX=/home/turtlebot2/asr_ws/install -G Unix Makefiles
