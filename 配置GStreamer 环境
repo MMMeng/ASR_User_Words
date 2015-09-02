@@ -1,0 +1,31 @@
+Ubuntu下构建GStreamer开发环境
+1、安装gsteamer开发库，在新立得中安装以下几个包
+   libstreamer0.10-dev
+   libstreamer0.10-0-dbg
+2、测试gstreamer开发库
+   编写代码hello.c,如下：
+   ////////////////////
+   #include <gst/gst.h>
+int main (int   argc,char *argv[])
+{
+    const gchar *nano_str;
+    guint major, minor, micro, nano;
+    gst_init (&argc, &argv);
+    gst_version (&major, &minor, &micro, &nano);
+    if (nano == 1)
+        nano_str = "(CVS)";
+    else if (nano == 2)
+        nano_str = "(Prerelease)";
+    else
+        nano_str = "";
+    printf ("This program is linked against GStreamer %d.%d.%d %s\n",
+          major, minor, micro, nano_str);
+    return 0;
+}
+  ////////////////////////
+3、编译运行
+   很多文章里使用：gcc -Wall $(pkg-config --cflags --libs gstreamer-0.10) hello.c -o hello，但是我使用这个指令总是提示错误：Undefined reference to gst_init。
+   后修改成：gcc -Wall hello.c -o hello $(pkg-config --cflags --libs gstreamer-0.10)
+   就可以正常编译了。
+   运行结果：This program is linked against GStreamer  0.10.36
+
