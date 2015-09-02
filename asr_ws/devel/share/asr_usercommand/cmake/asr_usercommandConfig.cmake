@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(asr_usercommand_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/turtlebot2/asr_ws/devel/include " STREQUAL " ")
+if(NOT "/home/turtlebot2/asr_ws/devel/include;/home/turtlebot2/asr_ws/src/asr_usercommand/include " STREQUAL " ")
   set(asr_usercommand_INCLUDE_DIRS "")
-  set(_include_dirs "/home/turtlebot2/asr_ws/devel/include")
+  set(_include_dirs "/home/turtlebot2/asr_ws/devel/include;/home/turtlebot2/asr_ws/src/asr_usercommand/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})

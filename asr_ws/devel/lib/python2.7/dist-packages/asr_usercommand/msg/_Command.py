@@ -9,7 +9,7 @@ class Command(genpy.Message):
   _md5sum = "cba5e21e920a3a2b7b375cb65b64cdea"
   _type = "asr_usercommand/Command"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """string command
+  _full_text = """string command 
 
 """
   __slots__ = ['command']

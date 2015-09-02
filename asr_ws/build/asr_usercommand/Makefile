@@ -443,29 +443,29 @@ user_command_server/fast:
 	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/user_command_server.dir/build.make asr_usercommand/CMakeFiles/user_command_server.dir/build
 .PHONY : user_command_server/fast
 
-src/command_sub.o: src/command_sub.cpp.o
-.PHONY : src/command_sub.o
+src/command_subscriber.o: src/command_subscriber.cpp.o
+.PHONY : src/command_subscriber.o
 
 # target to build an object file
-src/command_sub.cpp.o:
-	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o
-.PHONY : src/command_sub.cpp.o
+src/command_subscriber.cpp.o:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o
+.PHONY : src/command_subscriber.cpp.o
 
-src/command_sub.i: src/command_sub.cpp.i
-.PHONY : src/command_sub.i
+src/command_subscriber.i: src/command_subscriber.cpp.i
+.PHONY : src/command_subscriber.i
 
 # target to preprocess a source file
-src/command_sub.cpp.i:
-	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.i
-.PHONY : src/command_sub.cpp.i
+src/command_subscriber.cpp.i:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.i
+.PHONY : src/command_subscriber.cpp.i
 
-src/command_sub.s: src/command_sub.cpp.s
-.PHONY : src/command_sub.s
+src/command_subscriber.s: src/command_subscriber.cpp.s
+.PHONY : src/command_subscriber.s
 
 # target to generate assembly for a file
-src/command_sub.cpp.s:
-	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.s
-.PHONY : src/command_sub.cpp.s
+src/command_subscriber.cpp.s:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.s
+.PHONY : src/command_subscriber.cpp.s
 
 src/user_command_client.o: src/user_command_client.cpp.o
 .PHONY : src/user_command_client.o
@@ -549,9 +549,9 @@ help:
 	@echo "... test"
 	@echo "... user_command_client"
 	@echo "... user_command_server"
-	@echo "... src/command_sub.o"
-	@echo "... src/command_sub.i"
-	@echo "... src/command_sub.s"
+	@echo "... src/command_subscriber.o"
+	@echo "... src/command_subscriber.i"
+	@echo "... src/command_subscriber.s"
 	@echo "... src/user_command_client.o"
 	@echo "... src/user_command_client.i"
 	@echo "... src/user_command_client.s"

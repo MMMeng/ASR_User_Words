@@ -2,11 +2,7 @@
 #include "std_msgs/String.h"
 #include "asr_usercommand/Command.h"
 #include "asr_usercommand/UserCommand.h"
-#ifdef __cplusplus
- #if __cplusplus
- extern "C"{
-　 #endif
-#endif /* __cplusplus */ 
+
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/stdio.h"
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/string.h"
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/stdlib.h"
@@ -15,13 +11,8 @@
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/qtts.h"
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/msp_cmn.h"
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/msp_errors.h"
-#ifdef __cplusplus
-          #if __cplusplus
- }
- #endif
-#endif /* __cplusplus */ 
 
-//#include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/msp_types.h"
+
 
 typedef int SR_DWORD;
 typedef short int SR_WORD ;

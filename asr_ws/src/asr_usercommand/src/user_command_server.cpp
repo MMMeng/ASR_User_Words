@@ -3,10 +3,10 @@
 #include "std_msgs/String.h"
 #include "asr_usercommand/Command.h"
 
-#include "stdio.h"
-#include "string.h"
-#include "stdlib.h"
-#include "unistd.h"
+#include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/stdio.h"
+#include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/string.h"
+#include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/stdlib.h"
+#include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/unistd.h"
 
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/qisr.h"
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/msp_cmn.h"
@@ -14,10 +14,8 @@
 #include "/home/turtlebot2/asr_ws/devel/include/asr_usercommand/msp_types.h"
 
 #include <dlfcn.h>
+
 char rec_result[1024*4] = {0};
-
-
-
 
 const char*  get_audio_file(int num)
 {

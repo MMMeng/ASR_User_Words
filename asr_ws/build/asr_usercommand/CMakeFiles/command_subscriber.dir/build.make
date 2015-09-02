@@ -49,37 +49,37 @@ include asr_usercommand/CMakeFiles/command_subscriber.dir/progress.make
 # Include the compile flags for this target's objects.
 include asr_usercommand/CMakeFiles/command_subscriber.dir/flags.make
 
-asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o: asr_usercommand/CMakeFiles/command_subscriber.dir/flags.make
-asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o: /home/turtlebot2/asr_ws/src/asr_usercommand/src/command_sub.cpp
+asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o: asr_usercommand/CMakeFiles/command_subscriber.dir/flags.make
+asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o: /home/turtlebot2/asr_ws/src/asr_usercommand/src/command_subscriber.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o"
-	cd /home/turtlebot2/asr_ws/build/asr_usercommand && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o -c /home/turtlebot2/asr_ws/src/asr_usercommand/src/command_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o"
+	cd /home/turtlebot2/asr_ws/build/asr_usercommand && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o -c /home/turtlebot2/asr_ws/src/asr_usercommand/src/command_subscriber.cpp
 
-asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/command_subscriber.dir/src/command_sub.cpp.i"
-	cd /home/turtlebot2/asr_ws/build/asr_usercommand && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/turtlebot2/asr_ws/src/asr_usercommand/src/command_sub.cpp > CMakeFiles/command_subscriber.dir/src/command_sub.cpp.i
+asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.i"
+	cd /home/turtlebot2/asr_ws/build/asr_usercommand && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/turtlebot2/asr_ws/src/asr_usercommand/src/command_subscriber.cpp > CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.i
 
-asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/command_subscriber.dir/src/command_sub.cpp.s"
-	cd /home/turtlebot2/asr_ws/build/asr_usercommand && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/turtlebot2/asr_ws/src/asr_usercommand/src/command_sub.cpp -o CMakeFiles/command_subscriber.dir/src/command_sub.cpp.s
+asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.s"
+	cd /home/turtlebot2/asr_ws/build/asr_usercommand && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/turtlebot2/asr_ws/src/asr_usercommand/src/command_subscriber.cpp -o CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.s
 
-asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o.requires:
-.PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o.requires
+asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o.requires:
+.PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o.requires
 
-asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o.provides: asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o.requires
-	$(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o.provides.build
-.PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o.provides
+asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o.provides: asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o.requires
+	$(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o.provides.build
+.PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o.provides
 
-asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o.provides.build: asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o
+asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o.provides.build: asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o
 
 # Object files for target command_subscriber
 command_subscriber_OBJECTS = \
-"CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o"
+"CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o"
 
 # External object files for target command_subscriber
 command_subscriber_EXTERNAL_OBJECTS =
 
-/home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o
+/home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o
 /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: asr_usercommand/CMakeFiles/command_subscriber.dir/build.make
 /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: /opt/ros/indigo/lib/libroscpp.so
 /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: /usr/lib/i386-linux-gnu/libboost_signals.so
@@ -98,6 +98,7 @@ command_subscriber_EXTERNAL_OBJECTS =
 /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: /usr/lib/i386-linux-gnu/libboost_thread.so
 /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: /usr/lib/i386-linux-gnu/libpthread.so
 /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: /usr/lib/i386-linux-gnu/libconsole_bridge.so
+/home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: /home/turtlebot2/asr_ws/devel/include/asr_usercommand/libmsc.so
 /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber: asr_usercommand/CMakeFiles/command_subscriber.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber"
 	cd /home/turtlebot2/asr_ws/build/asr_usercommand && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/command_subscriber.dir/link.txt --verbose=$(VERBOSE)
@@ -106,7 +107,7 @@ command_subscriber_EXTERNAL_OBJECTS =
 asr_usercommand/CMakeFiles/command_subscriber.dir/build: /home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber
 .PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/build
 
-asr_usercommand/CMakeFiles/command_subscriber.dir/requires: asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o.requires
+asr_usercommand/CMakeFiles/command_subscriber.dir/requires: asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o.requires
 .PHONY : asr_usercommand/CMakeFiles/command_subscriber.dir/requires
 
 asr_usercommand/CMakeFiles/command_subscriber.dir/clean:

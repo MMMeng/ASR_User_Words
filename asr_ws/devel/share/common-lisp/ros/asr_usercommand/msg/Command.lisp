@@ -61,10 +61,10 @@
   "cba5e21e920a3a2b7b375cb65b64cdea")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<Command>)))
   "Returns full string definition for message of type '<Command>"
-  (cl:format cl:nil "string command~%~%~%"))
+  (cl:format cl:nil "string command ~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'Command)))
   "Returns full string definition for message of type 'Command"
-  (cl:format cl:nil "string command~%~%~%"))
+  (cl:format cl:nil "string command ~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <Command>))
   (cl:+ 0
      4 (cl:length (cl:slot-value msg 'command))

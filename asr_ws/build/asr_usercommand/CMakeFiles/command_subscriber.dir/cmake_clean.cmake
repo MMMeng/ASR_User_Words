@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/command_subscriber.dir/src/command_sub.cpp.o"
+  "CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.o"
   "/home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber.pdb"
   "/home/turtlebot2/asr_ws/devel/lib/asr_usercommand/command_subscriber"
 )
