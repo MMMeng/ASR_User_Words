@@ -371,6 +371,32 @@ command_subscriber/fast:
 .PHONY : command_subscriber/fast
 
 #=============================================================================
+# Target rules for targets named record_client
+
+# Build rule for target.
+record_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 record_client
+.PHONY : record_client
+
+# fast build rule for target.
+record_client/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/record_client.dir/build.make asr_usercommand/CMakeFiles/record_client.dir/build
+.PHONY : record_client/fast
+
+#=============================================================================
+# Target rules for targets named record_server
+
+# Build rule for target.
+record_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 record_server
+.PHONY : record_server
+
+# fast build rule for target.
+record_server/fast:
+	$(MAKE) -f asr_usercommand/CMakeFiles/record_server.dir/build.make asr_usercommand/CMakeFiles/record_server.dir/build
+.PHONY : record_server/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -543,6 +569,8 @@ help:
 	@echo "... asr_usercommand_genlisp"
 	@echo "... asr_usercommand_genpy"
 	@echo "... command_subscriber"
+	@echo "... record_client"
+	@echo "... record_server"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"

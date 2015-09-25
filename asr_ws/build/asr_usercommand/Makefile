@@ -290,6 +290,34 @@ command_subscriber/fast:
 .PHONY : command_subscriber/fast
 
 # Convenience name for target.
+asr_usercommand/CMakeFiles/record_client.dir/rule:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/record_client.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/record_client.dir/rule
+
+# Convenience name for target.
+record_client: asr_usercommand/CMakeFiles/record_client.dir/rule
+.PHONY : record_client
+
+# fast build rule for target.
+record_client/fast:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/record_client.dir/build.make asr_usercommand/CMakeFiles/record_client.dir/build
+.PHONY : record_client/fast
+
+# Convenience name for target.
+asr_usercommand/CMakeFiles/record_server.dir/rule:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/record_server.dir/rule
+.PHONY : asr_usercommand/CMakeFiles/record_server.dir/rule
+
+# Convenience name for target.
+record_server: asr_usercommand/CMakeFiles/record_server.dir/rule
+.PHONY : record_server
+
+# fast build rule for target.
+record_server/fast:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/record_server.dir/build.make asr_usercommand/CMakeFiles/record_server.dir/build
+.PHONY : record_server/fast
+
+# Convenience name for target.
 asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -467,6 +495,54 @@ src/command_subscriber.cpp.s:
 	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/command_subscriber.dir/build.make asr_usercommand/CMakeFiles/command_subscriber.dir/src/command_subscriber.cpp.s
 .PHONY : src/command_subscriber.cpp.s
 
+src/record_client.o: src/record_client.cpp.o
+.PHONY : src/record_client.o
+
+# target to build an object file
+src/record_client.cpp.o:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/record_client.dir/build.make asr_usercommand/CMakeFiles/record_client.dir/src/record_client.cpp.o
+.PHONY : src/record_client.cpp.o
+
+src/record_client.i: src/record_client.cpp.i
+.PHONY : src/record_client.i
+
+# target to preprocess a source file
+src/record_client.cpp.i:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/record_client.dir/build.make asr_usercommand/CMakeFiles/record_client.dir/src/record_client.cpp.i
+.PHONY : src/record_client.cpp.i
+
+src/record_client.s: src/record_client.cpp.s
+.PHONY : src/record_client.s
+
+# target to generate assembly for a file
+src/record_client.cpp.s:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/record_client.dir/build.make asr_usercommand/CMakeFiles/record_client.dir/src/record_client.cpp.s
+.PHONY : src/record_client.cpp.s
+
+src/record_server.o: src/record_server.cpp.o
+.PHONY : src/record_server.o
+
+# target to build an object file
+src/record_server.cpp.o:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/record_server.dir/build.make asr_usercommand/CMakeFiles/record_server.dir/src/record_server.cpp.o
+.PHONY : src/record_server.cpp.o
+
+src/record_server.i: src/record_server.cpp.i
+.PHONY : src/record_server.i
+
+# target to preprocess a source file
+src/record_server.cpp.i:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/record_server.dir/build.make asr_usercommand/CMakeFiles/record_server.dir/src/record_server.cpp.i
+.PHONY : src/record_server.cpp.i
+
+src/record_server.s: src/record_server.cpp.s
+.PHONY : src/record_server.s
+
+# target to generate assembly for a file
+src/record_server.cpp.s:
+	cd /home/turtlebot2/asr_ws/build && $(MAKE) -f asr_usercommand/CMakeFiles/record_server.dir/build.make asr_usercommand/CMakeFiles/record_server.dir/src/record_server.cpp.s
+.PHONY : src/record_server.cpp.s
+
 src/user_command_client.o: src/user_command_client.cpp.o
 .PHONY : src/user_command_client.o
 
@@ -537,6 +613,8 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... record_client"
+	@echo "... record_server"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -552,6 +630,12 @@ help:
 	@echo "... src/command_subscriber.o"
 	@echo "... src/command_subscriber.i"
 	@echo "... src/command_subscriber.s"
+	@echo "... src/record_client.o"
+	@echo "... src/record_client.i"
+	@echo "... src/record_client.s"
+	@echo "... src/record_server.o"
+	@echo "... src/record_server.i"
+	@echo "... src/record_server.s"
 	@echo "... src/user_command_client.o"
 	@echo "... src/user_command_client.i"
 	@echo "... src/user_command_client.s"

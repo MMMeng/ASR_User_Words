@@ -291,6 +291,8 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 # Convenience name for "all" pass in the directory.
 asr_usercommand/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all
 asr_usercommand/all: asr_usercommand/CMakeFiles/command_subscriber.dir/all
+asr_usercommand/all: asr_usercommand/CMakeFiles/record_client.dir/all
+asr_usercommand/all: asr_usercommand/CMakeFiles/record_server.dir/all
 asr_usercommand/all: asr_usercommand/CMakeFiles/user_command_client.dir/all
 asr_usercommand/all: asr_usercommand/CMakeFiles/user_command_server.dir/all
 .PHONY : asr_usercommand/all
@@ -306,6 +308,8 @@ asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messa
 asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_genlisp.dir/clean
 asr_usercommand/clean: asr_usercommand/CMakeFiles/asr_usercommand_genpy.dir/clean
 asr_usercommand/clean: asr_usercommand/CMakeFiles/command_subscriber.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/record_client.dir/clean
+asr_usercommand/clean: asr_usercommand/CMakeFiles/record_server.dir/clean
 asr_usercommand/clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 asr_usercommand/clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 asr_usercommand/clean: asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -420,9 +424,9 @@ clean: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/clean
 # Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir
 
 # All Build rule for target.
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all
 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all
 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all
-asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/all
 	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/depend
 	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles 
@@ -457,8 +461,8 @@ clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages.dir/clean
 # Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir
 
 # All Build rule for target.
-asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/all
 	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/depend
 	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_cpp.dir/build
@@ -523,8 +527,8 @@ clean: asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_lisp.dir/cle
 # Target rules for target asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir
 
 # All Build rule for target.
-asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/all
 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_UserCommand.dir/all
+asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/all
 asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/all: asr_usercommand/CMakeFiles/_asr_usercommand_generate_messages_check_deps_Command.dir/all
 	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/depend
 	$(MAKE) -f asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build.make asr_usercommand/CMakeFiles/asr_usercommand_generate_messages_py.dir/build
@@ -647,6 +651,76 @@ asr_usercommand/CMakeFiles/command_subscriber.dir/clean:
 
 # clean rule for target.
 clean: asr_usercommand/CMakeFiles/command_subscriber.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/record_client.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/record_client.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/record_client.dir/build.make asr_usercommand/CMakeFiles/record_client.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/record_client.dir/build.make asr_usercommand/CMakeFiles/record_client.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  12
+	@echo "Built target record_client"
+.PHONY : asr_usercommand/CMakeFiles/record_client.dir/all
+
+# Include target in all.
+all: asr_usercommand/CMakeFiles/record_client.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/record_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/record_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/record_client.dir/rule
+
+# Convenience name for target.
+record_client: asr_usercommand/CMakeFiles/record_client.dir/rule
+.PHONY : record_client
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/record_client.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/record_client.dir/build.make asr_usercommand/CMakeFiles/record_client.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/record_client.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/record_client.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target asr_usercommand/CMakeFiles/record_server.dir
+
+# All Build rule for target.
+asr_usercommand/CMakeFiles/record_server.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
+	$(MAKE) -f asr_usercommand/CMakeFiles/record_server.dir/build.make asr_usercommand/CMakeFiles/record_server.dir/depend
+	$(MAKE) -f asr_usercommand/CMakeFiles/record_server.dir/build.make asr_usercommand/CMakeFiles/record_server.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  13
+	@echo "Built target record_server"
+.PHONY : asr_usercommand/CMakeFiles/record_server.dir/all
+
+# Include target in all.
+all: asr_usercommand/CMakeFiles/record_server.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+asr_usercommand/CMakeFiles/record_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 asr_usercommand/CMakeFiles/record_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot2/asr_ws/build/CMakeFiles 0
+.PHONY : asr_usercommand/CMakeFiles/record_server.dir/rule
+
+# Convenience name for target.
+record_server: asr_usercommand/CMakeFiles/record_server.dir/rule
+.PHONY : record_server
+
+# clean rule for target.
+asr_usercommand/CMakeFiles/record_server.dir/clean:
+	$(MAKE) -f asr_usercommand/CMakeFiles/record_server.dir/build.make asr_usercommand/CMakeFiles/record_server.dir/clean
+.PHONY : asr_usercommand/CMakeFiles/record_server.dir/clean
+
+# clean rule for target.
+clean: asr_usercommand/CMakeFiles/record_server.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -935,7 +1009,7 @@ clean: asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 asr_usercommand/CMakeFiles/user_command_client.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
 	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_client.dir/build.make asr_usercommand/CMakeFiles/user_command_client.dir/depend
 	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_client.dir/build.make asr_usercommand/CMakeFiles/user_command_client.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  14
 	@echo "Built target user_command_client"
 .PHONY : asr_usercommand/CMakeFiles/user_command_client.dir/all
 
@@ -970,7 +1044,7 @@ clean: asr_usercommand/CMakeFiles/user_command_client.dir/clean
 asr_usercommand/CMakeFiles/user_command_server.dir/all: asr_usercommand/CMakeFiles/asr_usercommand_gencpp.dir/all
 	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_server.dir/build.make asr_usercommand/CMakeFiles/user_command_server.dir/depend
 	$(MAKE) -f asr_usercommand/CMakeFiles/user_command_server.dir/build.make asr_usercommand/CMakeFiles/user_command_server.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/asr_ws/build/CMakeFiles  15
 	@echo "Built target user_command_server"
 .PHONY : asr_usercommand/CMakeFiles/user_command_server.dir/all
 

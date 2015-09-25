@@ -9,10 +9,11 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   message_generation
+
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+ find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -81,9 +82,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS include
-   LIBRARIES asr_usercommand
-   CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
-  DEPENDS system_lib
+  LIBRARIES asr_usercommand
+  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime 
+  DEPENDS system_lib lasound 
 )
 
 ###########
@@ -92,10 +93,11 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-# include_directories(include)
-include_directories( include
-  ${catkin_INCLUDE_DIRS}
-)
+#include_directories(include)
+#include_directories( include
+#  ${catkin_INCLUDE_DIRS}
+
+#)
 
 ## Declare a cpp library
 # add_library(asr_usercommand
@@ -105,12 +107,18 @@ include_directories( include
 ## Declare a cpp executable
  add_executable(user_command_server src/user_command_server.cpp)
  add_executable(user_command_client src/user_command_client.cpp)
-# add_executable(command_subscriber  src/command_subscriber.cpp)
+ add_executable(command_subscriber  src/command_subscriber.cpp)
+ add_executable(record_server  src/record_server.cpp)
+ add_executable(record_client  src/record_client.cpp)
+
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
  add_dependencies(user_command_server asr_usercommand_gencpp)
  add_dependencies(user_command_client asr_usercommand_gencpp)
-# add_dependencies(command_subscriber asr_usercommand_gencpp)
+ add_dependencies(command_subscriber asr_usercommand_gencpp)
+ add_dependencies(record_server asr_usercommand_gencpp)
+ add_dependencies(record_client asr_usercommand_gencpp)
+
 ## Specify libraries to link a library or executable target against
  target_link_libraries(user_command_server 
    ${catkin_LIBRARIES}
@@ -118,15 +126,28 @@ include_directories( include
   target_link_libraries(user_command_client 
    ${catkin_LIBRARIES}
  )
-#  target_link_libraries(command_subscriber 
-#   ${catkin_LIBRARIES}
-# )
+  target_link_libraries(command_subscriber 
+   ${catkin_LIBRARIES}
+ )
+ target_link_libraries(record_server 
+   ${catkin_LIBRARIES}
+ )
+ target_link_libraries(record_client 
+   ${catkin_LIBRARIES}
+ )
 #target_link_libraries(command_subscriber
 #qtts.h
 #) 
   target_link_libraries(user_command_server /home/turtlebot2/asr_ws/devel/include/asr_usercommand/libmsc.so)
-  #target_link_libraries(command_subscriber /home/turtlebot2/asr_ws/devel/include/asr_usercommand/libmsc.so)
-
+  target_link_libraries(command_subscriber /home/turtlebot2/asr_ws/devel/include/asr_usercommand/libmsc.so)
+  target_link_libraries(user_command_server  -lasound)
+  target_link_libraries(record_server -lasound)
+  #target_link_libraries(user_command_server  /home/turtlebot2/asr_ws/src/asr_usercommand/include/asound.h)
+  #target_link_libraries(user_command_server  /home/turtlebot2/asr_ws/src/asr_usercommand/include/asoundlib.h)
+  #target_link_libraries(user_command_server  /home/turtlebot2/asr_ws/src/asr_usercommand/include/wav_parser.h) 
+  #target_link_libraries(user_command_server  /home/turtlebot2/asr_ws/src/asr_usercommand/include/sndwav_common.h)
+  #target_link_libraries(user_command_server  /home/turtlebot2/asr_ws/src/asr_usercommand/include/wav_parser.c) 
+  #target_link_libraries(user_command_server  /home/turtlebot2/asr_ws/src/asr_usercommand/include/sndwav_common.c)
 #############
 ## Install ##
 #############

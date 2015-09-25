@@ -13,6 +13,8 @@
 /home/turtlebot2/asr_ws/build/CMakeFiles/doxygen.dir
 /home/turtlebot2/asr_ws/build/gtest/CMakeFiles/gtest.dir
 /home/turtlebot2/asr_ws/build/gtest/CMakeFiles/gtest_main.dir
+/home/turtlebot2/asr_ws/build/asr_usercommand/CMakeFiles/record_client.dir
+/home/turtlebot2/asr_ws/build/asr_usercommand/CMakeFiles/record_server.dir
 /home/turtlebot2/asr_ws/build/asr_usercommand/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/turtlebot2/asr_ws/build/asr_usercommand/CMakeFiles/roscpp_generate_messages_lisp.dir
 /home/turtlebot2/asr_ws/build/asr_usercommand/CMakeFiles/roscpp_generate_messages_py.dir
