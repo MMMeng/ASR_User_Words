@@ -1,0 +1,8 @@
+prefix=/home/turtlebot2/ros_ws/devel
+
+Name: speechrecog
+Description: Description of speechrecog
+Version: 0.0.0
+Cflags: -I/home/turtlebot2/ros_ws/devel/include -I/home/turtlebot2/ros_ws/src/speechrecog/include
+Libs: -L/home/turtlebot2/ros_ws/devel/lib -lspeechrecog
+Requires: roscpp rospy std_msgs message_runtime

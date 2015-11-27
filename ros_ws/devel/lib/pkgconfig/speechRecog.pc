@@ -1,0 +1,8 @@
+prefix=/home/turtlebot2/ros_ws/devel
+
+Name: speechRecog
+Description: Description of speechRecog
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/turtlebot2/ros_ws/devel/lib 
+Requires: 

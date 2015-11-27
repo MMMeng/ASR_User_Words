@@ -1,0 +1,1071 @@
+============================================================
+Time  2015/11/27 14:25:30 667 
+============================================================
+[2015/11/27 14:25:30 667] isr_local  2027 os_type is:  Linux  
+[2015/11/27 14:25:30 667] isr_local  2036 Aitalk LOAD!  
+[2015/11/27 14:25:30 667] isr_local  2064 SYS_MSG_REGCB| param0 =  msp_status_cb  
+[2015/11/27 14:25:30 668] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:30 668] isr_local  2064 SYS_MSG_REGCB| param0 =  esrMessageCallBack  
+[2015/11/27 14:25:30 669] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:30 669] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  302  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  nil  
+[2015/11/27 14:25:30 669] isr_local  1453 push session message.   302  
+[2015/11/27 14:25:30 670] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:30 819] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83c0a4) 1  
+[2015/11/27 14:25:30 819] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:30 819] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:30 970] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83e23c) 2  
+[2015/11/27 14:25:30 970] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:30 970] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:31 121] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83e2b4) 2  
+[2015/11/27 14:25:31 121] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:31 121] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:31 270] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81f81c) 2  
+[2015/11/27 14:25:31 271] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:31 271] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:31 421] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81f79c) 2  
+[2015/11/27 14:25:31 421] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:31 421] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:31 572] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81fac4) 2  
+[2015/11/27 14:25:31 572] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:31 572] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:31 722] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81fc04) 2  
+[2015/11/27 14:25:31 722] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:31 722] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:31 873] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81fd44) 2  
+[2015/11/27 14:25:31 873] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:31 873] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:32 022] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81f8cc) 2  
+[2015/11/27 14:25:32 022] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:32 022] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:32 174] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af820024) 2  
+[2015/11/27 14:25:32 174] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:32 174] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:32 325] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af820164) 2  
+[2015/11/27 14:25:32 325] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:32 325] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:32 476] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af8202a4) 2  
+[2015/11/27 14:25:32 476] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:32 476] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:32 626] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af8203e4) 2  
+[2015/11/27 14:25:32 626] isr_local  1453 push session message.   303  
+[2015/11/27 14:25:32 626] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:32 663] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  306  nil  nil  
+[2015/11/27 14:25:32 663] isr_local  1450 ssb init.  
+[2015/11/27 14:25:32 663] isr_local  1464 processing msg in asrmsg_q:   302  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  nil  
+[2015/11/27 14:25:32 664] isr_local  1203 asrServer esrSessionBegin [in] params =   engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  
+[2015/11/27 14:25:32 664] isr_local  1209 forbid_aitalk=  0  
+[2015/11/27 14:25:32 664] isr_local  751  text_encoding =   nil  
+[2015/11/27 14:25:32 664] isr_local  1107 ASR_MSG_INIT esrInit() [in]   
+[2015/11/27 14:25:32 664] isr_local  283  forbid_asr =   nil  
+[2015/11/27 14:25:32 664] isr_local  1134 esrInit | params:   engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  
+[2015/11/27 14:25:32 664] isr_local  751  text_encoding =     
+[2015/11/27 14:25:32 664] isr_local  1145 esrInit | sample_rate =   16000  
+[2015/11/27 14:25:32 664] isr_local  1162 esrInit | params parse success  
+[2015/11/27 14:25:32 664] isr_local  1068 createEsrObject [in]  
+[2015/11/27 14:25:32 664] isr_local  1080  lucEsr new   
+[2015/11/27 14:25:32 665] isr_local  954  paramResPathAnalysis() [in], param_str :  fo|res/asr/common.jet  
+[2015/11/27 14:25:32 665] isr_local  978  file count =   1  
+[2015/11/27 14:25:32 665] isr_local  870  resPathSubStrAnalysis() [in], sub_str:  fo|res/asr/common.jet  
+[2015/11/27 14:25:32 665] isr_local  897  file open type is:   fo  
+[2015/11/27 14:25:32 665] isr_local  931  res/asr/common.jet  0  0  
+[2015/11/27 14:25:32 665] isr_local  1000 speech_plus_setting  1  
+[2015/11/27 14:25:32 665] isr_local  1013 2  nil  res/asr/common.jet  0  0  
+[2015/11/27 14:25:32 665] isr_local  1015 res_ver  2  
+[2015/11/27 14:25:32 665] isr_local  1016 res 5  066839d96a62df675fedcbd3d304e3c8  
+[2015/11/27 14:25:32 665] isr_local  1017 res_new_old_mark  v5pp  
+[2015/11/27 14:25:32 665] isr_local  1018 res_usr_name    
+[2015/11/27 14:25:32 665] isr_local  1019 res_expires    
+[2015/11/27 14:25:32 665] isr_local  1020 err  0  
+[2015/11/27 14:25:32 665] isr_local  1037 lgi appid 5  066839d96a62df675fedcbd3d304e3c8  
+[2015/11/27 14:25:32 665] isr_local  1049 res_expires is null  
+[2015/11/27 14:25:32 665] isr_local  933  ret, res_head_offset  0  256  
+[2015/11/27 14:25:32 666] isr_local  947  resPathSubStrAnalysis() [out], ret :  0  
+[2015/11/27 14:25:32 666] isr_local  987  paramResPathAnalysis() [out], ret :  0  
+[2015/11/27 14:25:32 691] isr_local  1100 START cost :   26  
+[2015/11/27 14:25:32 691] isr_local  1102 createEsrObject [out]  
+[2015/11/27 14:25:32 691] isr_local  1178 ASR_MSG_INIT ARSesrInit() [out]   
+[2015/11/27 14:25:32 692] isr_local  1281 grmBuildPath:   res/asr/GrmBuilld/  
+[2015/11/27 14:25:32 692] isr_local  1313 result_type :   xml  
+[2015/11/27 14:25:32 692] isr_local  1314 result_encoding :   UTF-8  
+[2015/11/27 14:25:32 692] isr_local  1315 is iat :   false  
+[2015/11/27 14:25:32 692] isr_local  797  params got sample_rate :  16000  
+[2015/11/27 14:25:32 692] isr_local  1977 commit path:   res/asr/GrmBuilld/temp/commit  
+[2015/11/27 14:25:32 692] isr_local  2014 commit success!  
+[2015/11/27 14:25:32 693] isr_local  1325 esrObj:start ret =   0  
+[2015/11/27 14:25:32 693] isr_local  1327 asrServer esrSessionBegin [out]  
+[2015/11/27 14:25:32 693] isr_local  1468 esrSessionBegin, ret =   0  
+[2015/11/27 14:25:32 693] isr_local  249  processRetCode | first_error =  0  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83c0a4) 1  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83e23c) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83e2b4) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81f81c) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81f79c) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81fac4) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81fc04) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81fd44) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81f8cc) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af820024) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af820164) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af8202a4) 2  
+[2015/11/27 14:25:32 693] isr_local  1464 processing msg in asrmsg_q:   303  udata(af8203e4) 2  
+[2015/11/27 14:25:32 693] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:32 693] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:32 703] isr_local  604  esrMessageHandle | Aitalk msg:  784  
+[2015/11/27 14:25:32 703] isr_local  634  local engine ready  
+[2015/11/27 14:25:32 703] isr_local  574  ASRFlushBufferAudio buffer audio num:  13  
+[2015/11/27 14:25:32 703] isr_local  1369 esrAudioWrite [in] :  udata(af83c0a4) 1  
+[2015/11/27 14:25:32 703] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 704] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 704] isr_local  1369 esrAudioWrite [in] :  udata(af83e23c) 2  
+[2015/11/27 14:25:32 704] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 704] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 704] isr_local  1369 esrAudioWrite [in] :  udata(af83e2b4) 2  
+[2015/11/27 14:25:32 704] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 704] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 704] isr_local  1369 esrAudioWrite [in] :  udata(af81f81c) 2  
+[2015/11/27 14:25:32 704] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 704] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 704] isr_local  1369 esrAudioWrite [in] :  udata(af81f79c) 2  
+[2015/11/27 14:25:32 704] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 704] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 704] isr_local  1369 esrAudioWrite [in] :  udata(af81fac4) 2  
+[2015/11/27 14:25:32 704] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 704] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 704] isr_local  1369 esrAudioWrite [in] :  udata(af81fc04) 2  
+[2015/11/27 14:25:32 704] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 704] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 704] isr_local  1369 esrAudioWrite [in] :  udata(af81fd44) 2  
+[2015/11/27 14:25:32 704] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 705] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 705] isr_local  1369 esrAudioWrite [in] :  udata(af81f8cc) 2  
+[2015/11/27 14:25:32 705] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 705] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 705] isr_local  1369 esrAudioWrite [in] :  udata(af820024) 2  
+[2015/11/27 14:25:32 705] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 705] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 705] isr_local  1369 esrAudioWrite [in] :  udata(af820164) 2  
+[2015/11/27 14:25:32 705] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 705] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 705] isr_local  1369 esrAudioWrite [in] :  udata(af8202a4) 2  
+[2015/11/27 14:25:32 705] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 705] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 705] isr_local  1369 esrAudioWrite [in] :  udata(af8203e4) 2  
+[2015/11/27 14:25:32 705] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 705] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 705] isr_local  604  esrMessageHandle | Aitalk msg:  1541  
+[2015/11/27 14:25:32 705] isr_local  615  local engine started  
+[2015/11/27 14:25:32 712] isr_local  604  esrMessageHandle | Aitalk msg:  1025  
+[2015/11/27 14:25:32 712] isr_local  703  message_table[msg] =   404  
+[2015/11/27 14:25:32 773] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af8200ac) 2  
+[2015/11/27 14:25:32 773] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:32 773] isr_local  1369 esrAudioWrite [in] :  udata(af8200ac) 2  
+[2015/11/27 14:25:32 773] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 774] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 774] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:32 774] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:32 924] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af8201ec) 2  
+[2015/11/27 14:25:32 924] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:32 924] isr_local  1369 esrAudioWrite [in] :  udata(af8201ec) 2  
+[2015/11/27 14:25:32 924] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:32 924] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:32 924] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:32 924] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:33 074] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab733054) 2  
+[2015/11/27 14:25:33 074] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:33 074] isr_local  1369 esrAudioWrite [in] :  udata(ab733054) 2  
+[2015/11/27 14:25:33 074] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:33 074] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:33 074] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:33 074] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:33 224] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83e2dc) 2  
+[2015/11/27 14:25:33 224] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:33 224] isr_local  1369 esrAudioWrite [in] :  udata(af83e2dc) 2  
+[2015/11/27 14:25:33 224] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:33 224] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:33 224] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:33 224] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:33 374] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af82032c) 2  
+[2015/11/27 14:25:33 374] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:33 374] isr_local  1369 esrAudioWrite [in] :  udata(af82032c) 2  
+[2015/11/27 14:25:33 375] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:33 375] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:33 375] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:33 375] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:33 524] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af82038c) 2  
+[2015/11/27 14:25:33 524] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:33 525] isr_local  1369 esrAudioWrite [in] :  udata(af82038c) 2  
+[2015/11/27 14:25:33 525] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:33 525] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:33 525] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:33 525] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:33 675] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af820354) 2  
+[2015/11/27 14:25:33 675] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:33 675] isr_local  1369 esrAudioWrite [in] :  udata(af820354) 2  
+[2015/11/27 14:25:33 675] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:33 675] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:33 675] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:33 675] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:33 825] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81dc84) 2  
+[2015/11/27 14:25:33 825] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:33 825] isr_local  1369 esrAudioWrite [in] :  udata(af81dc84) 2  
+[2015/11/27 14:25:33 825] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:33 825] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:33 825] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:33 825] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:33 975] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab73342c) 2  
+[2015/11/27 14:25:33 975] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:33 975] isr_local  1369 esrAudioWrite [in] :  udata(ab73342c) 2  
+[2015/11/27 14:25:33 975] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:33 975] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:33 975] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:33 975] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:34 127] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81dcac) 2  
+[2015/11/27 14:25:34 127] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:34 127] isr_local  1369 esrAudioWrite [in] :  udata(af81dcac) 2  
+[2015/11/27 14:25:34 127] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:34 127] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:34 127] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:34 127] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:34 127] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81dd84) 2  
+[2015/11/27 14:25:34 128] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:34 128] isr_local  1369 esrAudioWrite [in] :  udata(af81dd84) 2  
+[2015/11/27 14:25:34 128] isr_local  1381 auwl=  6400  
+[2015/11/27 14:25:34 128] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:34 128] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:34 128] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:34 274] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81f3b4) 4  
+[2015/11/27 14:25:34 274] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:25:34 274] isr_local  1369 esrAudioWrite [in] :  udata(af81f3b4) 4  
+[2015/11/27 14:25:34 274] isr_local  1381 auwl=  5440  
+[2015/11/27 14:25:34 274] isr_local  1332 esrEndAudio() [in]  
+[2015/11/27 14:25:34 275] isr_local  1342 esrEndAudio() [out] :   0  
+[2015/11/27 14:25:34 275] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:25:34 275] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:34 275] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:34 275] isr_local  604  esrMessageHandle | Aitalk msg:  785  
+[2015/11/27 14:25:34 275] isr_local  703  message_table[msg] =   406  
+[2015/11/27 14:25:34 297] isr_local  604  esrMessageHandle | Aitalk msg:  1285  
+[2015/11/27 14:25:34 297] isr_local  703  message_table[msg] =   nil  
+[2015/11/27 14:25:34 298] isr_local  604  esrMessageHandle | Aitalk msg:  1280  
+[2015/11/27 14:25:34 298] isr_local  658  nRecognizeState:  1  
+[2015/11/27 14:25:34 298] isr_local  659  nConfidenceScore:  87  
+[2015/11/27 14:25:34 298] isr_local  296  nil  
+[2015/11/27 14:25:34 298] isr_local  703  message_table[msg] =   407  
+[2015/11/27 14:25:34 298] isr_local  604  esrMessageHandle | Aitalk msg:  1282  
+[2015/11/27 14:25:34 298] isr_local  654  IVMSG_RECOGNIZEEND | recognized end!  
+[2015/11/27 14:25:34 298] isr_local  703  message_table[msg] =   408  
+[2015/11/27 14:25:34 576] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  304  nil  nil  
+[2015/11/27 14:25:34 576] isr_local  1516 ASR_MSG_SSE  
+[2015/11/27 14:25:34 576] isr_local  1347 esrSessionEnd() [in]  
+[2015/11/27 14:25:34 576] isr_local  1364 esrSessionEnd() [out]  
+[2015/11/27 14:25:34 576] isr_local  249  processRetCode | first_error =  0  
+[2015/11/27 14:25:34 576] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:25:34 576] isr_local  2130 last gc at  1448605525  
+[2015/11/27 14:25:34 581] isr_local  604  esrMessageHandle | Aitalk msg:  1541  
+[2015/11/27 14:25:34 584] isr_local  2043 Aitalk SHUTDOWN!  
+[2015/11/27 14:25:34 584] isr_local  1183 esrFini() [in]  
+[2015/11/27 14:25:35 636] isr_local  1195 DESTROY cost :   1051  
+[2015/11/27 14:25:35 636] isr_local  1199 esrFini() [out]  
+============================================================
+Time  2015/11/27 14:33:51 275 
+============================================================
+[2015/11/27 14:33:51 275] isr_local  2027 os_type is:  Linux  
+[2015/11/27 14:33:51 275] isr_local  2036 Aitalk LOAD!  
+[2015/11/27 14:33:51 275] isr_local  2064 SYS_MSG_REGCB| param0 =  msp_status_cb  
+[2015/11/27 14:33:51 275] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:51 276] isr_local  2064 SYS_MSG_REGCB| param0 =  esrMessageCallBack  
+[2015/11/27 14:33:51 276] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:51 276] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  302  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  nil  
+[2015/11/27 14:33:51 276] isr_local  1453 push session message.   302  
+[2015/11/27 14:33:51 277] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:51 426] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af828da4) 1  
+[2015/11/27 14:33:51 426] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:51 426] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:51 576] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af862b4c) 2  
+[2015/11/27 14:33:51 576] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:51 577] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:51 726] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af85aed4) 2  
+[2015/11/27 14:33:51 726] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:51 726] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:51 874] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c144) 2  
+[2015/11/27 14:33:51 874] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:51 874] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:52 028] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c0c4) 2  
+[2015/11/27 14:33:52 028] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:52 028] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:52 177] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c3ec) 2  
+[2015/11/27 14:33:52 177] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:52 177] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:52 329] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af84a814) 2  
+[2015/11/27 14:33:52 329] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:52 329] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:52 477] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c644) 2  
+[2015/11/27 14:33:52 477] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:52 477] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:52 630] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c1f4) 2  
+[2015/11/27 14:33:52 631] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:52 631] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:52 781] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c924) 2  
+[2015/11/27 14:33:52 781] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:52 781] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:52 932] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81ca64) 2  
+[2015/11/27 14:33:52 932] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:52 932] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:53 083] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81cba4) 2  
+[2015/11/27 14:33:53 083] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:53 083] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:53 232] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81cce4) 2  
+[2015/11/27 14:33:53 232] isr_local  1453 push session message.   303  
+[2015/11/27 14:33:53 232] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:53 270] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  306  nil  nil  
+[2015/11/27 14:33:53 270] isr_local  1450 ssb init.  
+[2015/11/27 14:33:53 270] isr_local  1464 processing msg in asrmsg_q:   302  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  nil  
+[2015/11/27 14:33:53 270] isr_local  1203 asrServer esrSessionBegin [in] params =   engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  
+[2015/11/27 14:33:53 270] isr_local  1209 forbid_aitalk=  0  
+[2015/11/27 14:33:53 270] isr_local  751  text_encoding =   nil  
+[2015/11/27 14:33:53 270] isr_local  1107 ASR_MSG_INIT esrInit() [in]   
+[2015/11/27 14:33:53 271] isr_local  283  forbid_asr =   nil  
+[2015/11/27 14:33:53 271] isr_local  1134 esrInit | params:   engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  
+[2015/11/27 14:33:53 271] isr_local  751  text_encoding =     
+[2015/11/27 14:33:53 271] isr_local  1145 esrInit | sample_rate =   16000  
+[2015/11/27 14:33:53 271] isr_local  1162 esrInit | params parse success  
+[2015/11/27 14:33:53 271] isr_local  1068 createEsrObject [in]  
+[2015/11/27 14:33:53 271] isr_local  1080  lucEsr new   
+[2015/11/27 14:33:53 271] isr_local  954  paramResPathAnalysis() [in], param_str :  fo|res/asr/common.jet  
+[2015/11/27 14:33:53 271] isr_local  978  file count =   1  
+[2015/11/27 14:33:53 271] isr_local  870  resPathSubStrAnalysis() [in], sub_str:  fo|res/asr/common.jet  
+[2015/11/27 14:33:53 271] isr_local  897  file open type is:   fo  
+[2015/11/27 14:33:53 271] isr_local  931  res/asr/common.jet  0  0  
+[2015/11/27 14:33:53 271] isr_local  1000 speech_plus_setting  1  
+[2015/11/27 14:33:53 271] isr_local  1013 2  nil  res/asr/common.jet  0  0  
+[2015/11/27 14:33:53 272] isr_local  1015 res_ver  2  
+[2015/11/27 14:33:53 272] isr_local  1016 res 5  066839d96a62df675fedcbd3d304e3c8  
+[2015/11/27 14:33:53 272] isr_local  1017 res_new_old_mark  v5pp  
+[2015/11/27 14:33:53 272] isr_local  1018 res_usr_name    
+[2015/11/27 14:33:53 272] isr_local  1019 res_expires    
+[2015/11/27 14:33:53 272] isr_local  1020 err  0  
+[2015/11/27 14:33:53 272] isr_local  1037 lgi appid 5  066839d96a62df675fedcbd3d304e3c8  
+[2015/11/27 14:33:53 272] isr_local  1049 res_expires is null  
+[2015/11/27 14:33:53 272] isr_local  933  ret, res_head_offset  0  256  
+[2015/11/27 14:33:53 272] isr_local  947  resPathSubStrAnalysis() [out], ret :  0  
+[2015/11/27 14:33:53 272] isr_local  987  paramResPathAnalysis() [out], ret :  0  
+[2015/11/27 14:33:53 303] isr_local  1100 START cost :   30  
+[2015/11/27 14:33:53 303] isr_local  1102 createEsrObject [out]  
+[2015/11/27 14:33:53 303] isr_local  1178 ASR_MSG_INIT ARSesrInit() [out]   
+[2015/11/27 14:33:53 303] isr_local  1281 grmBuildPath:   res/asr/GrmBuilld/  
+[2015/11/27 14:33:53 303] isr_local  1313 result_type :   xml  
+[2015/11/27 14:33:53 303] isr_local  1314 result_encoding :   UTF-8  
+[2015/11/27 14:33:53 303] isr_local  1315 is iat :   false  
+[2015/11/27 14:33:53 304] isr_local  797  params got sample_rate :  16000  
+[2015/11/27 14:33:53 304] isr_local  1977 commit path:   res/asr/GrmBuilld/temp/commit  
+[2015/11/27 14:33:53 305] isr_local  2014 commit success!  
+[2015/11/27 14:33:53 306] isr_local  1325 esrObj:start ret =   0  
+[2015/11/27 14:33:53 306] isr_local  1327 asrServer esrSessionBegin [out]  
+[2015/11/27 14:33:53 306] isr_local  1468 esrSessionBegin, ret =   0  
+[2015/11/27 14:33:53 306] isr_local  249  processRetCode | first_error =  0  
+[2015/11/27 14:33:53 306] isr_local  1464 processing msg in asrmsg_q:   303  udata(af828da4) 1  
+[2015/11/27 14:33:53 306] isr_local  1464 processing msg in asrmsg_q:   303  udata(af862b4c) 2  
+[2015/11/27 14:33:53 306] isr_local  1464 processing msg in asrmsg_q:   303  udata(af85aed4) 2  
+[2015/11/27 14:33:53 306] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81c144) 2  
+[2015/11/27 14:33:53 306] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81c0c4) 2  
+[2015/11/27 14:33:53 306] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81c3ec) 2  
+[2015/11/27 14:33:53 306] isr_local  1464 processing msg in asrmsg_q:   303  udata(af84a814) 2  
+[2015/11/27 14:33:53 306] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81c644) 2  
+[2015/11/27 14:33:53 307] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81c1f4) 2  
+[2015/11/27 14:33:53 307] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81c924) 2  
+[2015/11/27 14:33:53 307] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81ca64) 2  
+[2015/11/27 14:33:53 307] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81cba4) 2  
+[2015/11/27 14:33:53 307] isr_local  1464 processing msg in asrmsg_q:   303  udata(af81cce4) 2  
+[2015/11/27 14:33:53 307] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:53 307] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:53 316] isr_local  604  esrMessageHandle | Aitalk msg:  784  
+[2015/11/27 14:33:53 316] isr_local  634  local engine ready  
+[2015/11/27 14:33:53 317] isr_local  574  ASRFlushBufferAudio buffer audio num:  13  
+[2015/11/27 14:33:53 317] isr_local  1369 esrAudioWrite [in] :  udata(af828da4) 1  
+[2015/11/27 14:33:53 317] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 317] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 317] isr_local  1369 esrAudioWrite [in] :  udata(af862b4c) 2  
+[2015/11/27 14:33:53 317] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 317] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 317] isr_local  1369 esrAudioWrite [in] :  udata(af85aed4) 2  
+[2015/11/27 14:33:53 317] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 317] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 317] isr_local  1369 esrAudioWrite [in] :  udata(af81c144) 2  
+[2015/11/27 14:33:53 317] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 317] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 318] isr_local  1369 esrAudioWrite [in] :  udata(af81c0c4) 2  
+[2015/11/27 14:33:53 318] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 318] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 318] isr_local  1369 esrAudioWrite [in] :  udata(af81c3ec) 2  
+[2015/11/27 14:33:53 318] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 318] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 318] isr_local  1369 esrAudioWrite [in] :  udata(af84a814) 2  
+[2015/11/27 14:33:53 318] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 318] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 318] isr_local  1369 esrAudioWrite [in] :  udata(af81c644) 2  
+[2015/11/27 14:33:53 318] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 318] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 318] isr_local  1369 esrAudioWrite [in] :  udata(af81c1f4) 2  
+[2015/11/27 14:33:53 318] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 318] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 318] isr_local  1369 esrAudioWrite [in] :  udata(af81c924) 2  
+[2015/11/27 14:33:53 318] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 318] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 318] isr_local  1369 esrAudioWrite [in] :  udata(af81ca64) 2  
+[2015/11/27 14:33:53 318] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 319] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 319] isr_local  1369 esrAudioWrite [in] :  udata(af81cba4) 2  
+[2015/11/27 14:33:53 319] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 319] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 319] isr_local  1369 esrAudioWrite [in] :  udata(af81cce4) 2  
+[2015/11/27 14:33:53 319] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 319] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 319] isr_local  604  esrMessageHandle | Aitalk msg:  1541  
+[2015/11/27 14:33:53 319] isr_local  615  local engine started  
+[2015/11/27 14:33:53 332] isr_local  604  esrMessageHandle | Aitalk msg:  1025  
+[2015/11/27 14:33:53 332] isr_local  703  message_table[msg] =   404  
+[2015/11/27 14:33:53 381] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c474) 2  
+[2015/11/27 14:33:53 381] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:53 381] isr_local  1369 esrAudioWrite [in] :  udata(af81c474) 2  
+[2015/11/27 14:33:53 381] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 381] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 381] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:53 381] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:53 531] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af86180c) 2  
+[2015/11/27 14:33:53 531] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:53 531] isr_local  1369 esrAudioWrite [in] :  udata(af86180c) 2  
+[2015/11/27 14:33:53 531] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 531] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 531] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:53 531] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:53 681] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c08c) 2  
+[2015/11/27 14:33:53 681] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:53 681] isr_local  1369 esrAudioWrite [in] :  udata(af81c08c) 2  
+[2015/11/27 14:33:53 681] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 681] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 681] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:53 681] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:53 831] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81c58c) 2  
+[2015/11/27 14:33:53 831] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:53 831] isr_local  1369 esrAudioWrite [in] :  udata(af81c58c) 2  
+[2015/11/27 14:33:53 831] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 831] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 831] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:53 831] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:53 981] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81cc2c) 2  
+[2015/11/27 14:33:53 981] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:53 981] isr_local  1369 esrAudioWrite [in] :  udata(af81cc2c) 2  
+[2015/11/27 14:33:53 981] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:53 981] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:53 981] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:53 981] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:54 131] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab7343cc) 2  
+[2015/11/27 14:33:54 131] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:54 131] isr_local  1369 esrAudioWrite [in] :  udata(ab7343cc) 2  
+[2015/11/27 14:33:54 131] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:54 131] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:54 131] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:54 131] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:54 281] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81d7f4) 2  
+[2015/11/27 14:33:54 282] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:54 282] isr_local  1369 esrAudioWrite [in] :  udata(af81d7f4) 2  
+[2015/11/27 14:33:54 282] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:54 282] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:54 282] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:54 282] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:54 432] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab734484) 2  
+[2015/11/27 14:33:54 432] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:54 432] isr_local  1369 esrAudioWrite [in] :  udata(ab734484) 2  
+[2015/11/27 14:33:54 432] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:54 432] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:54 432] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:54 432] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:54 582] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81f12c) 2  
+[2015/11/27 14:33:54 582] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:54 582] isr_local  1369 esrAudioWrite [in] :  udata(af81f12c) 2  
+[2015/11/27 14:33:54 582] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:54 582] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:54 582] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:54 582] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:54 733] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81f1ac) 2  
+[2015/11/27 14:33:54 733] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:54 733] isr_local  1369 esrAudioWrite [in] :  udata(af81f1ac) 2  
+[2015/11/27 14:33:54 733] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:54 734] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:54 734] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:54 734] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:54 734] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af81f284) 2  
+[2015/11/27 14:33:54 734] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:54 734] isr_local  1369 esrAudioWrite [in] :  udata(af81f284) 2  
+[2015/11/27 14:33:54 734] isr_local  1381 auwl=  6400  
+[2015/11/27 14:33:54 734] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:54 734] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:54 734] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:54 881] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab73442c) 4  
+[2015/11/27 14:33:54 881] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:33:54 881] isr_local  1369 esrAudioWrite [in] :  udata(ab73442c) 4  
+[2015/11/27 14:33:54 881] isr_local  1381 auwl=  5440  
+[2015/11/27 14:33:54 882] isr_local  1332 esrEndAudio() [in]  
+[2015/11/27 14:33:54 882] isr_local  1342 esrEndAudio() [out] :   0  
+[2015/11/27 14:33:54 882] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:33:54 882] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:54 882] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:54 882] isr_local  604  esrMessageHandle | Aitalk msg:  785  
+[2015/11/27 14:33:54 882] isr_local  703  message_table[msg] =   406  
+[2015/11/27 14:33:54 904] isr_local  604  esrMessageHandle | Aitalk msg:  1285  
+[2015/11/27 14:33:54 904] isr_local  703  message_table[msg] =   nil  
+[2015/11/27 14:33:54 905] isr_local  604  esrMessageHandle | Aitalk msg:  1280  
+[2015/11/27 14:33:54 905] isr_local  658  nRecognizeState:  1  
+[2015/11/27 14:33:54 905] isr_local  659  nConfidenceScore:  88  
+[2015/11/27 14:33:54 905] isr_local  296  nil  
+[2015/11/27 14:33:54 905] isr_local  703  message_table[msg] =   407  
+[2015/11/27 14:33:54 905] isr_local  604  esrMessageHandle | Aitalk msg:  1282  
+[2015/11/27 14:33:54 905] isr_local  654  IVMSG_RECOGNIZEEND | recognized end!  
+[2015/11/27 14:33:54 906] isr_local  703  message_table[msg] =   408  
+[2015/11/27 14:33:55 183] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  304  nil  nil  
+[2015/11/27 14:33:55 183] isr_local  1516 ASR_MSG_SSE  
+[2015/11/27 14:33:55 183] isr_local  1347 esrSessionEnd() [in]  
+[2015/11/27 14:33:55 183] isr_local  1364 esrSessionEnd() [out]  
+[2015/11/27 14:33:55 183] isr_local  249  processRetCode | first_error =  0  
+[2015/11/27 14:33:55 183] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:33:55 183] isr_local  2130 last gc at  1448606021  
+[2015/11/27 14:33:55 187] isr_local  2043 Aitalk SHUTDOWN!  
+[2015/11/27 14:33:55 187] isr_local  1183 esrFini() [in]  
+[2015/11/27 14:33:56 239] isr_local  1195 DESTROY cost :   1052  
+[2015/11/27 14:33:56 239] isr_local  1199 esrFini() [out]  
+============================================================
+Time  2015/11/27 14:51:43 170 
+============================================================
+[2015/11/27 14:51:43 170] isr_local  2027 os_type is:  Linux  
+[2015/11/27 14:51:43 170] isr_local  2036 Aitalk LOAD!  
+[2015/11/27 14:51:43 170] isr_local  2064 SYS_MSG_REGCB| param0 =  msp_status_cb  
+[2015/11/27 14:51:43 170] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:43 170] isr_local  2064 SYS_MSG_REGCB| param0 =  esrMessageCallBack  
+[2015/11/27 14:51:43 171] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:43 171] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  302  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  nil  
+[2015/11/27 14:51:43 171] isr_local  1453 push session message.   302  
+[2015/11/27 14:51:43 171] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:43 321] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af50c2a4) 1  
+[2015/11/27 14:51:43 321] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:43 321] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:43 472] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a016c) 2  
+[2015/11/27 14:51:43 472] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:43 472] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:43 622] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5224fc) 2  
+[2015/11/27 14:51:43 622] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:43 622] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:43 772] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3234) 2  
+[2015/11/27 14:51:43 772] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:43 772] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:43 923] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3374) 2  
+[2015/11/27 14:51:43 923] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:43 923] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:44 077] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a34b4) 2  
+[2015/11/27 14:51:44 077] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:44 077] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:44 227] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a35f4) 2  
+[2015/11/27 14:51:44 227] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:44 227] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:44 377] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3734) 2  
+[2015/11/27 14:51:44 377] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:44 377] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:44 526] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3874) 2  
+[2015/11/27 14:51:44 526] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:44 526] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:44 679] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a39b4) 2  
+[2015/11/27 14:51:44 679] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:44 679] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:44 830] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3af4) 2  
+[2015/11/27 14:51:44 830] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:44 830] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:44 977] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3c34) 2  
+[2015/11/27 14:51:44 977] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:44 977] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:45 127] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3d74) 2  
+[2015/11/27 14:51:45 127] isr_local  1453 push session message.   303  
+[2015/11/27 14:51:45 127] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:45 169] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  306  nil  nil  
+[2015/11/27 14:51:45 169] isr_local  1450 ssb init.  
+[2015/11/27 14:51:45 169] isr_local  1464 processing msg in asrmsg_q:   302  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  nil  
+[2015/11/27 14:51:45 169] isr_local  1203 asrServer esrSessionBegin [in] params =   engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  
+[2015/11/27 14:51:45 169] isr_local  1209 forbid_aitalk=  0  
+[2015/11/27 14:51:45 169] isr_local  751  text_encoding =   nil  
+[2015/11/27 14:51:45 170] isr_local  1107 ASR_MSG_INIT esrInit() [in]   
+[2015/11/27 14:51:45 170] isr_local  283  forbid_asr =   nil  
+[2015/11/27 14:51:45 170] isr_local  1134 esrInit | params:   engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  
+[2015/11/27 14:51:45 170] isr_local  751  text_encoding =     
+[2015/11/27 14:51:45 170] isr_local  1145 esrInit | sample_rate =   16000  
+[2015/11/27 14:51:45 170] isr_local  1162 esrInit | params parse success  
+[2015/11/27 14:51:45 170] isr_local  1068 createEsrObject [in]  
+[2015/11/27 14:51:45 170] isr_local  1080  lucEsr new   
+[2015/11/27 14:51:45 170] isr_local  954  paramResPathAnalysis() [in], param_str :  fo|res/asr/common.jet  
+[2015/11/27 14:51:45 170] isr_local  978  file count =   1  
+[2015/11/27 14:51:45 170] isr_local  870  resPathSubStrAnalysis() [in], sub_str:  fo|res/asr/common.jet  
+[2015/11/27 14:51:45 170] isr_local  897  file open type is:   fo  
+[2015/11/27 14:51:45 170] isr_local  931  res/asr/common.jet  0  0  
+[2015/11/27 14:51:45 170] isr_local  1000 speech_plus_setting  1  
+[2015/11/27 14:51:45 170] isr_local  1013 2  nil  res/asr/common.jet  0  0  
+[2015/11/27 14:51:45 170] isr_local  1015 res_ver  2  
+[2015/11/27 14:51:45 170] isr_local  1016 res 5  066839d96a62df675fedcbd3d304e3c8  
+[2015/11/27 14:51:45 170] isr_local  1017 res_new_old_mark  v5pp  
+[2015/11/27 14:51:45 170] isr_local  1018 res_usr_name    
+[2015/11/27 14:51:45 170] isr_local  1019 res_expires    
+[2015/11/27 14:51:45 170] isr_local  1020 err  0  
+[2015/11/27 14:51:45 170] isr_local  1037 lgi appid 5  066839d96a62df675fedcbd3d304e3c8  
+[2015/11/27 14:51:45 170] isr_local  1049 res_expires is null  
+[2015/11/27 14:51:45 170] isr_local  933  ret, res_head_offset  0  256  
+[2015/11/27 14:51:45 170] isr_local  947  resPathSubStrAnalysis() [out], ret :  0  
+[2015/11/27 14:51:45 170] isr_local  987  paramResPathAnalysis() [out], ret :  0  
+[2015/11/27 14:51:45 205] isr_local  1100 START cost :   34  
+[2015/11/27 14:51:45 205] isr_local  1102 createEsrObject [out]  
+[2015/11/27 14:51:45 205] isr_local  1178 ASR_MSG_INIT ARSesrInit() [out]   
+[2015/11/27 14:51:45 205] isr_local  1281 grmBuildPath:   res/asr/GrmBuilld/  
+[2015/11/27 14:51:45 205] isr_local  1313 result_type :   xml  
+[2015/11/27 14:51:45 206] isr_local  1314 result_encoding :   UTF-8  
+[2015/11/27 14:51:45 206] isr_local  1315 is iat :   false  
+[2015/11/27 14:51:45 206] isr_local  797  params got sample_rate :  16000  
+[2015/11/27 14:51:45 206] isr_local  1977 commit path:   res/asr/GrmBuilld/temp/commit  
+[2015/11/27 14:51:45 207] isr_local  2014 commit success!  
+[2015/11/27 14:51:45 208] isr_local  1325 esrObj:start ret =   0  
+[2015/11/27 14:51:45 208] isr_local  1327 asrServer esrSessionBegin [out]  
+[2015/11/27 14:51:45 208] isr_local  1468 esrSessionBegin, ret =   0  
+[2015/11/27 14:51:45 208] isr_local  249  processRetCode | first_error =  0  
+[2015/11/27 14:51:45 208] isr_local  1464 processing msg in asrmsg_q:   303  udata(af50c2a4) 1  
+[2015/11/27 14:51:45 208] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a016c) 2  
+[2015/11/27 14:51:45 208] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5224fc) 2  
+[2015/11/27 14:51:45 208] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a3234) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a3374) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a34b4) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a35f4) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a3734) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a3874) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a39b4) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a3af4) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a3c34) 2  
+[2015/11/27 14:51:45 209] isr_local  1464 processing msg in asrmsg_q:   303  udata(af5a3d74) 2  
+[2015/11/27 14:51:45 209] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:45 209] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:45 218] isr_local  604  esrMessageHandle | Aitalk msg:  784  
+[2015/11/27 14:51:45 219] isr_local  634  local engine ready  
+[2015/11/27 14:51:45 219] isr_local  574  ASRFlushBufferAudio buffer audio num:  13  
+[2015/11/27 14:51:45 219] isr_local  1369 esrAudioWrite [in] :  udata(af50c2a4) 1  
+[2015/11/27 14:51:45 219] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 219] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 220] isr_local  1369 esrAudioWrite [in] :  udata(af5a016c) 2  
+[2015/11/27 14:51:45 220] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 220] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 220] isr_local  1369 esrAudioWrite [in] :  udata(af5224fc) 2  
+[2015/11/27 14:51:45 220] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 220] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 220] isr_local  1369 esrAudioWrite [in] :  udata(af5a3234) 2  
+[2015/11/27 14:51:45 220] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 220] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 220] isr_local  1369 esrAudioWrite [in] :  udata(af5a3374) 2  
+[2015/11/27 14:51:45 220] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 221] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 221] isr_local  1369 esrAudioWrite [in] :  udata(af5a34b4) 2  
+[2015/11/27 14:51:45 221] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 221] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 221] isr_local  1369 esrAudioWrite [in] :  udata(af5a35f4) 2  
+[2015/11/27 14:51:45 221] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 221] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 221] isr_local  1369 esrAudioWrite [in] :  udata(af5a3734) 2  
+[2015/11/27 14:51:45 221] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 221] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 221] isr_local  1369 esrAudioWrite [in] :  udata(af5a3874) 2  
+[2015/11/27 14:51:45 221] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 221] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 222] isr_local  1369 esrAudioWrite [in] :  udata(af5a39b4) 2  
+[2015/11/27 14:51:45 222] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 222] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 222] isr_local  1369 esrAudioWrite [in] :  udata(af5a3af4) 2  
+[2015/11/27 14:51:45 222] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 222] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 222] isr_local  1369 esrAudioWrite [in] :  udata(af5a3c34) 2  
+[2015/11/27 14:51:45 222] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 222] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 222] isr_local  1369 esrAudioWrite [in] :  udata(af5a3d74) 2  
+[2015/11/27 14:51:45 222] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 223] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 223] isr_local  604  esrMessageHandle | Aitalk msg:  1541  
+[2015/11/27 14:51:45 223] isr_local  615  local engine started  
+[2015/11/27 14:51:45 236] isr_local  604  esrMessageHandle | Aitalk msg:  1025  
+[2015/11/27 14:51:45 237] isr_local  703  message_table[msg] =   404  
+[2015/11/27 14:51:45 278] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a37bc) 2  
+[2015/11/27 14:51:45 278] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:45 278] isr_local  1369 esrAudioWrite [in] :  udata(af5a37bc) 2  
+[2015/11/27 14:51:45 278] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 278] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 278] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:45 278] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:45 428] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3b7c) 2  
+[2015/11/27 14:51:45 428] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:45 428] isr_local  1369 esrAudioWrite [in] :  udata(af5a3b7c) 2  
+[2015/11/27 14:51:45 428] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 428] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 428] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:45 428] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:45 578] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a32bc) 2  
+[2015/11/27 14:51:45 578] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:45 578] isr_local  1369 esrAudioWrite [in] :  udata(af5a32bc) 2  
+[2015/11/27 14:51:45 578] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 578] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 578] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:45 578] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:45 728] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5223d4) 2  
+[2015/11/27 14:51:45 728] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:45 728] isr_local  1369 esrAudioWrite [in] :  udata(af5223d4) 2  
+[2015/11/27 14:51:45 728] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 728] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 728] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:45 728] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:45 879] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3cbc) 2  
+[2015/11/27 14:51:45 879] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:45 879] isr_local  1369 esrAudioWrite [in] :  udata(af5a3cbc) 2  
+[2015/11/27 14:51:45 879] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:45 879] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:45 879] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:45 879] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:46 029] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab43418c) 2  
+[2015/11/27 14:51:46 029] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:46 029] isr_local  1369 esrAudioWrite [in] :  udata(ab43418c) 2  
+[2015/11/27 14:51:46 029] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:46 029] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:46 029] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:46 029] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:46 179] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab4342c4) 2  
+[2015/11/27 14:51:46 179] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:46 179] isr_local  1369 esrAudioWrite [in] :  udata(ab4342c4) 2  
+[2015/11/27 14:51:46 179] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:46 179] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:46 179] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:46 179] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:46 329] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab4342ec) 2  
+[2015/11/27 14:51:46 329] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:46 330] isr_local  1369 esrAudioWrite [in] :  udata(ab4342ec) 2  
+[2015/11/27 14:51:46 330] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:46 330] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:46 330] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:46 330] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:46 480] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3dfc) 2  
+[2015/11/27 14:51:46 480] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:46 480] isr_local  1369 esrAudioWrite [in] :  udata(af5a3dfc) 2  
+[2015/11/27 14:51:46 480] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:46 480] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:46 480] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:46 480] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:46 631] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a3e24) 2  
+[2015/11/27 14:51:46 631] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:46 631] isr_local  1369 esrAudioWrite [in] :  udata(af5a3e24) 2  
+[2015/11/27 14:51:46 631] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:46 631] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:46 631] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:46 631] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:46 632] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a92cc) 2  
+[2015/11/27 14:51:46 632] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:46 632] isr_local  1369 esrAudioWrite [in] :  udata(af5a92cc) 2  
+[2015/11/27 14:51:46 632] isr_local  1381 auwl=  6400  
+[2015/11/27 14:51:46 632] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:46 632] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:46 632] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:46 779] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af5a92f4) 4  
+[2015/11/27 14:51:46 779] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 14:51:46 779] isr_local  1369 esrAudioWrite [in] :  udata(af5a92f4) 4  
+[2015/11/27 14:51:46 780] isr_local  1381 auwl=  5440  
+[2015/11/27 14:51:46 780] isr_local  1332 esrEndAudio() [in]  
+[2015/11/27 14:51:46 780] isr_local  1342 esrEndAudio() [out] :   0  
+[2015/11/27 14:51:46 780] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 14:51:46 780] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:46 780] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:46 780] isr_local  604  esrMessageHandle | Aitalk msg:  785  
+[2015/11/27 14:51:46 780] isr_local  703  message_table[msg] =   406  
+[2015/11/27 14:51:46 803] isr_local  604  esrMessageHandle | Aitalk msg:  1285  
+[2015/11/27 14:51:46 803] isr_local  703  message_table[msg] =   nil  
+[2015/11/27 14:51:46 803] isr_local  604  esrMessageHandle | Aitalk msg:  1280  
+[2015/11/27 14:51:46 803] isr_local  658  nRecognizeState:  1  
+[2015/11/27 14:51:46 803] isr_local  659  nConfidenceScore:  87  
+[2015/11/27 14:51:46 803] isr_local  296  nil  
+[2015/11/27 14:51:46 803] isr_local  703  message_table[msg] =   407  
+[2015/11/27 14:51:46 804] isr_local  604  esrMessageHandle | Aitalk msg:  1282  
+[2015/11/27 14:51:46 804] isr_local  654  IVMSG_RECOGNIZEEND | recognized end!  
+[2015/11/27 14:51:46 804] isr_local  703  message_table[msg] =   408  
+[2015/11/27 14:51:47 081] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  304  nil  nil  
+[2015/11/27 14:51:47 082] isr_local  1516 ASR_MSG_SSE  
+[2015/11/27 14:51:47 082] isr_local  1347 esrSessionEnd() [in]  
+[2015/11/27 14:51:47 082] isr_local  1364 esrSessionEnd() [out]  
+[2015/11/27 14:51:47 083] isr_local  249  processRetCode | first_error =  0  
+[2015/11/27 14:51:47 083] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 14:51:47 083] isr_local  2130 last gc at  1448607097  
+[2015/11/27 14:51:47 087] isr_local  604  esrMessageHandle | Aitalk msg:  1541  
+[2015/11/27 14:51:47 092] isr_local  2043 Aitalk SHUTDOWN!  
+[2015/11/27 14:51:47 092] isr_local  1183 esrFini() [in]  
+[2015/11/27 14:51:48 144] isr_local  1195 DESTROY cost :   1052  
+[2015/11/27 14:51:48 144] isr_local  1199 esrFini() [out]  
+============================================================
+Time  2015/11/27 15:21:30 570 
+============================================================
+[2015/11/27 15:21:30 570] isr_local  2027 os_type is:  Linux  
+[2015/11/27 15:21:30 570] isr_local  2036 Aitalk LOAD!  
+[2015/11/27 15:21:30 571] isr_local  2064 SYS_MSG_REGCB| param0 =  msp_status_cb  
+[2015/11/27 15:21:30 571] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:30 572] isr_local  2064 SYS_MSG_REGCB| param0 =  esrMessageCallBack  
+[2015/11/27 15:21:30 572] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:30 572] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  302  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  nil  
+[2015/11/27 15:21:30 572] isr_local  1453 push session message.   302  
+[2015/11/27 15:21:30 572] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:30 719] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83b69c) 1  
+[2015/11/27 15:21:30 719] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:30 719] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:30 874] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83cca4) 2  
+[2015/11/27 15:21:30 874] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:30 874] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:31 024] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83cd8c) 2  
+[2015/11/27 15:21:31 024] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:31 024] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:31 173] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83ce44) 2  
+[2015/11/27 15:21:31 173] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:31 173] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:31 324] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83cf4c) 2  
+[2015/11/27 15:21:31 324] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:31 324] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:31 475] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83cfd4) 2  
+[2015/11/27 15:21:31 476] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:31 476] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:31 625] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83d08c) 2  
+[2015/11/27 15:21:31 625] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:31 625] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:31 774] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83d144) 2  
+[2015/11/27 15:21:31 775] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:31 775] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:31 928] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83c76c) 2  
+[2015/11/27 15:21:31 928] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:31 928] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:32 077] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83d2ec) 2  
+[2015/11/27 15:21:32 078] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:32 078] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:32 227] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83d3a4) 2  
+[2015/11/27 15:21:32 227] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:32 227] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:32 376] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83d45c) 2  
+[2015/11/27 15:21:32 376] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:32 376] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:32 527] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(af83d514) 2  
+[2015/11/27 15:21:32 527] isr_local  1453 push session message.   303  
+[2015/11/27 15:21:32 527] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:32 567] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  306  nil  nil  
+[2015/11/27 15:21:32 567] isr_local  1450 ssb init.  
+[2015/11/27 15:21:32 567] isr_local  1464 processing msg in asrmsg_q:   302  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  nil  
+[2015/11/27 15:21:32 567] isr_local  1203 asrServer esrSessionBegin [in] params =   engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  
+[2015/11/27 15:21:32 567] isr_local  1209 forbid_aitalk=  0  
+[2015/11/27 15:21:32 567] isr_local  751  text_encoding =   nil  
+[2015/11/27 15:21:32 567] isr_local  1107 ASR_MSG_INIT esrInit() [in]   
+[2015/11/27 15:21:32 567] isr_local  283  forbid_asr =   nil  
+[2015/11/27 15:21:32 568] isr_local  1134 esrInit | params:   engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=utf-8  
+[2015/11/27 15:21:32 568] isr_local  751  text_encoding =     
+[2015/11/27 15:21:32 568] isr_local  1145 esrInit | sample_rate =   16000  
+[2015/11/27 15:21:32 568] isr_local  1162 esrInit | params parse success  
+[2015/11/27 15:21:32 568] isr_local  1068 createEsrObject [in]  
+[2015/11/27 15:21:32 568] isr_local  1080  lucEsr new   
+[2015/11/27 15:21:32 568] isr_local  954  paramResPathAnalysis() [in], param_str :  fo|res/asr/common.jet  
+[2015/11/27 15:21:32 568] isr_local  978  file count =   1  
+[2015/11/27 15:21:32 568] isr_local  870  resPathSubStrAnalysis() [in], sub_str:  fo|res/asr/common.jet  
+[2015/11/27 15:21:32 568] isr_local  897  file open type is:   fo  
+[2015/11/27 15:21:32 568] isr_local  931  res/asr/common.jet  0  0  
+[2015/11/27 15:21:32 568] isr_local  1000 speech_plus_setting  1  
+[2015/11/27 15:21:32 568] isr_local  1013 2  nil  res/asr/common.jet  0  0  
+[2015/11/27 15:21:32 568] isr_local  1015 res_ver  2  
+[2015/11/27 15:21:32 568] isr_local  1016 res 5  066839d96a62df675fedcbd3d304e3c8  
+[2015/11/27 15:21:32 568] isr_local  1017 res_new_old_mark  v5pp  
+[2015/11/27 15:21:32 568] isr_local  1018 res_usr_name    
+[2015/11/27 15:21:32 568] isr_local  1019 res_expires    
+[2015/11/27 15:21:32 568] isr_local  1020 err  0  
+[2015/11/27 15:21:32 568] isr_local  1037 lgi appid 5  066839d96a62df675fedcbd3d304e3c8  
+[2015/11/27 15:21:32 568] isr_local  1049 res_expires is null  
+[2015/11/27 15:21:32 568] isr_local  933  ret, res_head_offset  0  256  
+[2015/11/27 15:21:32 568] isr_local  947  resPathSubStrAnalysis() [out], ret :  0  
+[2015/11/27 15:21:32 568] isr_local  987  paramResPathAnalysis() [out], ret :  0  
+[2015/11/27 15:21:32 581] isr_local  1100 START cost :   12  
+[2015/11/27 15:21:32 581] isr_local  1102 createEsrObject [out]  
+[2015/11/27 15:21:32 581] isr_local  1178 ASR_MSG_INIT ARSesrInit() [out]   
+[2015/11/27 15:21:32 581] isr_local  1281 grmBuildPath:   res/asr/GrmBuilld/  
+[2015/11/27 15:21:32 581] isr_local  1313 result_type :   xml  
+[2015/11/27 15:21:32 581] isr_local  1314 result_encoding :   UTF-8  
+[2015/11/27 15:21:32 581] isr_local  1315 is iat :   false  
+[2015/11/27 15:21:32 581] isr_local  797  params got sample_rate :  16000  
+[2015/11/27 15:21:32 581] isr_local  1977 commit path:   res/asr/GrmBuilld/temp/commit  
+[2015/11/27 15:21:32 582] isr_local  2014 commit success!  
+[2015/11/27 15:21:32 582] isr_local  1325 esrObj:start ret =   0  
+[2015/11/27 15:21:32 582] isr_local  1327 asrServer esrSessionBegin [out]  
+[2015/11/27 15:21:32 582] isr_local  1468 esrSessionBegin, ret =   0  
+[2015/11/27 15:21:32 582] isr_local  249  processRetCode | first_error =  0  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83b69c) 1  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83cca4) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83cd8c) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83ce44) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83cf4c) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83cfd4) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83d08c) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83d144) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83c76c) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83d2ec) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83d3a4) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83d45c) 2  
+[2015/11/27 15:21:32 582] isr_local  1464 processing msg in asrmsg_q:   303  udata(af83d514) 2  
+[2015/11/27 15:21:32 582] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:32 582] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:32 592] isr_local  604  esrMessageHandle | Aitalk msg:  784  
+[2015/11/27 15:21:32 592] isr_local  634  local engine ready  
+[2015/11/27 15:21:32 592] isr_local  574  ASRFlushBufferAudio buffer audio num:  13  
+[2015/11/27 15:21:32 592] isr_local  1369 esrAudioWrite [in] :  udata(af83b69c) 1  
+[2015/11/27 15:21:32 592] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 593] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 593] isr_local  1369 esrAudioWrite [in] :  udata(af83cca4) 2  
+[2015/11/27 15:21:32 593] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 593] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 593] isr_local  1369 esrAudioWrite [in] :  udata(af83cd8c) 2  
+[2015/11/27 15:21:32 593] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 593] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 593] isr_local  1369 esrAudioWrite [in] :  udata(af83ce44) 2  
+[2015/11/27 15:21:32 593] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 593] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 593] isr_local  1369 esrAudioWrite [in] :  udata(af83cf4c) 2  
+[2015/11/27 15:21:32 593] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 593] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 593] isr_local  1369 esrAudioWrite [in] :  udata(af83cfd4) 2  
+[2015/11/27 15:21:32 593] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 593] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 593] isr_local  1369 esrAudioWrite [in] :  udata(af83d08c) 2  
+[2015/11/27 15:21:32 593] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 593] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 593] isr_local  1369 esrAudioWrite [in] :  udata(af83d144) 2  
+[2015/11/27 15:21:32 593] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 593] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 594] isr_local  1369 esrAudioWrite [in] :  udata(af83c76c) 2  
+[2015/11/27 15:21:32 594] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 594] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 594] isr_local  1369 esrAudioWrite [in] :  udata(af83d2ec) 2  
+[2015/11/27 15:21:32 594] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 594] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 594] isr_local  1369 esrAudioWrite [in] :  udata(af83d3a4) 2  
+[2015/11/27 15:21:32 594] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 594] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 594] isr_local  1369 esrAudioWrite [in] :  udata(af83d45c) 2  
+[2015/11/27 15:21:32 594] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 594] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 594] isr_local  1369 esrAudioWrite [in] :  udata(af83d514) 2  
+[2015/11/27 15:21:32 594] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 594] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 594] isr_local  604  esrMessageHandle | Aitalk msg:  1541  
+[2015/11/27 15:21:32 594] isr_local  615  local engine started  
+[2015/11/27 15:21:32 601] isr_local  604  esrMessageHandle | Aitalk msg:  1025  
+[2015/11/27 15:21:32 601] isr_local  703  message_table[msg] =   404  
+[2015/11/27 15:21:32 677] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87c744) 2  
+[2015/11/27 15:21:32 677] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:32 677] isr_local  1369 esrAudioWrite [in] :  udata(ab87c744) 2  
+[2015/11/27 15:21:32 677] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 677] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 677] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:32 677] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:32 829] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87d37c) 2  
+[2015/11/27 15:21:32 829] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:32 829] isr_local  1369 esrAudioWrite [in] :  udata(ab87d37c) 2  
+[2015/11/27 15:21:32 829] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 829] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 829] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:32 829] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:32 979] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87d3a4) 2  
+[2015/11/27 15:21:32 979] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:32 979] isr_local  1369 esrAudioWrite [in] :  udata(ab87d3a4) 2  
+[2015/11/27 15:21:32 979] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:32 979] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:32 979] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:32 979] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:33 129] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87d3cc) 2  
+[2015/11/27 15:21:33 129] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:33 129] isr_local  1369 esrAudioWrite [in] :  udata(ab87d3cc) 2  
+[2015/11/27 15:21:33 129] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:33 130] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:33 130] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:33 130] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:33 280] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87d3f4) 2  
+[2015/11/27 15:21:33 280] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:33 280] isr_local  1369 esrAudioWrite [in] :  udata(ab87d3f4) 2  
+[2015/11/27 15:21:33 280] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:33 280] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:33 280] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:33 280] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:33 430] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87d41c) 2  
+[2015/11/27 15:21:33 430] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:33 430] isr_local  1369 esrAudioWrite [in] :  udata(ab87d41c) 2  
+[2015/11/27 15:21:33 430] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:33 430] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:33 430] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:33 430] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:33 580] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87fc1c) 2  
+[2015/11/27 15:21:33 580] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:33 580] isr_local  1369 esrAudioWrite [in] :  udata(ab87fc1c) 2  
+[2015/11/27 15:21:33 580] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:33 580] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:33 580] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:33 581] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:33 731] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87fc44) 2  
+[2015/11/27 15:21:33 731] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:33 731] isr_local  1369 esrAudioWrite [in] :  udata(ab87fc44) 2  
+[2015/11/27 15:21:33 731] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:33 731] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:33 731] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:33 731] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:33 881] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87fc6c) 2  
+[2015/11/27 15:21:33 881] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:33 881] isr_local  1369 esrAudioWrite [in] :  udata(ab87fc6c) 2  
+[2015/11/27 15:21:33 881] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:33 881] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:33 881] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:33 881] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:34 032] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87fc94) 2  
+[2015/11/27 15:21:34 032] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:34 032] isr_local  1369 esrAudioWrite [in] :  udata(ab87fc94) 2  
+[2015/11/27 15:21:34 033] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:34 033] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:34 033] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:34 033] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:34 033] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87fcbc) 2  
+[2015/11/27 15:21:34 033] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:34 033] isr_local  1369 esrAudioWrite [in] :  udata(ab87fcbc) 2  
+[2015/11/27 15:21:34 033] isr_local  1381 auwl=  6400  
+[2015/11/27 15:21:34 033] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:34 033] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:34 033] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:34 180] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  303  udata(ab87fce4) 4  
+[2015/11/27 15:21:34 180] isr_local  1505 ASR_MSG_AUW  
+[2015/11/27 15:21:34 180] isr_local  1369 esrAudioWrite [in] :  udata(ab87fce4) 4  
+[2015/11/27 15:21:34 180] isr_local  1381 auwl=  5440  
+[2015/11/27 15:21:34 180] isr_local  1332 esrEndAudio() [in]  
+[2015/11/27 15:21:34 181] isr_local  1342 esrEndAudio() [out] :   0  
+[2015/11/27 15:21:34 181] isr_local  1412 esrAudioWrite [out] :ret =   0  
+[2015/11/27 15:21:34 181] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:34 181] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:34 181] isr_local  604  esrMessageHandle | Aitalk msg:  785  
+[2015/11/27 15:21:34 181] isr_local  703  message_table[msg] =   406  
+[2015/11/27 15:21:34 204] isr_local  604  esrMessageHandle | Aitalk msg:  1285  
+[2015/11/27 15:21:34 204] isr_local  703  message_table[msg] =   nil  
+[2015/11/27 15:21:34 204] isr_local  604  esrMessageHandle | Aitalk msg:  1280  
+[2015/11/27 15:21:34 204] isr_local  658  nRecognizeState:  1  
+[2015/11/27 15:21:34 204] isr_local  659  nConfidenceScore:  87  
+[2015/11/27 15:21:34 204] isr_local  296  nil  
+[2015/11/27 15:21:34 204] isr_local  703  message_table[msg] =   407  
+[2015/11/27 15:21:34 205] isr_local  604  esrMessageHandle | Aitalk msg:  1282  
+[2015/11/27 15:21:34 205] isr_local  654  IVMSG_RECOGNIZEEND | recognized end!  
+[2015/11/27 15:21:34 205] isr_local  703  message_table[msg] =   408  
+[2015/11/27 15:21:34 482] isr_local  1416 asr_message_handler() [in] | msg, param0, param1 :  304  nil  nil  
+[2015/11/27 15:21:34 482] isr_local  1516 ASR_MSG_SSE  
+[2015/11/27 15:21:34 482] isr_local  1347 esrSessionEnd() [in]  
+[2015/11/27 15:21:34 482] isr_local  1364 esrSessionEnd() [out]  
+[2015/11/27 15:21:34 483] isr_local  249  processRetCode | first_error =  0  
+[2015/11/27 15:21:34 483] isr_local  1532 asr_message_handler() [out], ret =   0  
+[2015/11/27 15:21:34 483] isr_local  2130 last gc at  1448608887  
+[2015/11/27 15:21:34 487] isr_local  604  esrMessageHandle | Aitalk msg:  1541  
+[2015/11/27 15:21:34 488] isr_local  2043 Aitalk SHUTDOWN!  
+[2015/11/27 15:21:34 488] isr_local  1183 esrFini() [in]  
+[2015/11/27 15:21:35 541] isr_local  1195 DESTROY cost :   1052  
+[2015/11/27 15:21:35 541] isr_local  1199 esrFini() [out]  

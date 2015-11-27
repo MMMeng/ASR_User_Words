@@ -1,0 +1,8 @@
+prefix=/home/turtlebot2/ros_ws/devel
+
+Name: facedetect
+Description: Description of facedetect
+Version: 0.0.0
+Cflags: -I/home/turtlebot2/ros_ws/devel/include -I/home/turtlebot2/ros_ws/src/facedetect/include
+Libs: -L/home/turtlebot2/ros_ws/devel/lib -lfacedetect
+Requires: roscpp rospy std_msgs message_runtime

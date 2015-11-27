@@ -1,0 +1,6 @@
+# The response contains the position of the center of the circle which represent the detected face
+int32 trigger
+---
+float64 x
+float64 y
+

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "asr_usercommand")
+set(asr_usercommand_MAINTAINER "turtlebot2 <turtlebot2@todo.todo>")
+set(asr_usercommand_DEPRECATED "")
+set(asr_usercommand_VERSION "0.0.0")
+set(asr_usercommand_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "message_generation")
+set(asr_usercommand_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "message_runtime")
+set(asr_usercommand_BUILDTOOL_DEPENDS "catkin")

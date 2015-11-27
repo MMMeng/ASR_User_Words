@@ -1,0 +1,2 @@
+asr_usercommand:facedetect:speechrecog
+-DCATKIN_DEVEL_PREFIX=/home/turtlebot2/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/turtlebot2/ros_ws/install -G Unix Makefiles
