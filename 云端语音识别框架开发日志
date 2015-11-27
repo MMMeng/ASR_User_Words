@@ -1,0 +1,30 @@
+讯飞离线命令词集成日志
+日期:2015/11/23-2015/11/27
+
+主要工作量:
+    1)将离线命令词识别语音包(aitalk)集成到ros下,构建speechrecog package,建立"recognizer""trigger"两个节点.其中在"recognizer"节点中集成了讯飞离线命令词识别API,提供"command_recognize"服务,用于实现对命令词进行识别的功能;"trigger"节点用于触发"command_recognize"服务.
+    2)对于aitalk开发包,构建两个语法文件(call.bnf && motion.bnf),研究如何解决加载多个语法文件的问题.
+
+
+存在的问题:
+    1)离线命令词识别语音包(aitalk)中识别的音频文件的格式为.pcm格式,而之前的录音代码录制的音频格式为.wav,二者不一致:要解决把wav音频格式文件转化成pcm格式文件的问题.
+    2)无法加载多个语法文件(其中,一个语法文件对应一个特定的功能内容,比如打电话\运动指示\迎宾问候等;同时加载多个语法文件,是为了实现"全面.综合"的内容识别.
+    3)识别结果返回的字符串为xml文件格式,如:
+      <?xml version='1.0' encoding='utf-8' standalone='yes' ?><nlp>
+         <version>1.1</version>
+         <rawtext>打电话给丁伟</rawtext>
+         <confidence>87</confidence>
+         <engine>local</engine>
+         <result>
+	    <focus>dialpre|contact</focus>
+	    <confidence>0|0</confidence>
+	    <object>
+		    <dialpre id="10001">打电话给</dialpre>
+		    <contact id="65535">丁伟</contact>
+            </object>
+         </result>
+      </nlp>
+      需要对该字符串进行处理,以提取出其中的目标string"打电话给丁伟" \ "打电话给" \ "丁伟";
+      目前的解决方案: 1. 采用xml解析方式
+                     2. 字符串处理方式
+      
