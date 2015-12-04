@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "speechRecog")
-set(speechRecog_MAINTAINER "turtlebot2 <turtlebot2@todo.todo>")
-set(speechRecog_DEPRECATED "")
-set(speechRecog_VERSION "0.0.0")
-set(speechRecog_BUILD_DEPENDS "message_generation" "roscpp" "rospy" "std_msgs")
-set(speechRecog_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
-set(speechRecog_BUILDTOOL_DEPENDS "catkin")

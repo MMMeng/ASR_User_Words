@@ -4,7 +4,15 @@
 speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/Command.h
 speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/CommandRequest.h
 speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/CommandResponse.h
+speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/msp_cmn.h
+speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/msp_errors.h
+speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/msp_types.h
+speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/qtts.h
+speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/sndwav_common.c
+speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/sndwav_common.h
 speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/trigger.cpp
+speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/wav_parser.c
+speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/wav_parser.h
 speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
 speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h

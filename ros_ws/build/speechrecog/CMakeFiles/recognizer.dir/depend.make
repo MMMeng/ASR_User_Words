@@ -9,6 +9,10 @@ speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /home/turtlebot2/ros
 speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/msp_types.h
 speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /home/turtlebot2/ros_ws/devel/include/speechrecog/qisr.h
 speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/recognizer.cpp
+speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/sndwav_common.c
+speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/sndwav_common.h
+speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/wav_parser.c
+speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /home/turtlebot2/ros_ws/src/speechrecog/src/wav_parser.h
 speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
 speechrecog/CMakeFiles/recognizer.dir/src/recognizer.cpp.o: /opt/ros/indigo/include/ros/advertise_options.h

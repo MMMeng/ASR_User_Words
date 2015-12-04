@@ -1,0 +1,127 @@
+============================================================
+Time  2015/12/04 15:00:37 711 
+============================================================
+[2015/12/04 15:00:37 711] isr        1544 isr loaded!  
+[2015/12/04 15:00:37 712] isr        1636 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =  func(95eca50) 
+[2015/12/04 15:00:37 712] isr        1562 ISR_MSG_SSB  
+[2015/12/04 15:00:37 712] isr        1090 ISRSessionBegin() [in], params:   engine_type = local, 		asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, 		grm_build_path = res/asr/GrmBuilld, local_grammar = command, 		result_type = xml, result_encoding = utf-8,   
+[2015/12/04 15:00:37 712] isr        1101 key:  engine_type  ,value:  local  
+[2015/12/04 15:00:37 712] isr        1101 key:  asr_res_path  ,value:  fo|res/asr/common.jet  
+[2015/12/04 15:00:37 712] isr        1101 key:  sample_rate  ,value:  16000  
+[2015/12/04 15:00:37 712] isr        1101 key:  grm_build_path  ,value:  res/asr/GrmBuilld  
+[2015/12/04 15:00:37 712] isr        1101 key:  local_grammar  ,value:  command  
+[2015/12/04 15:00:37 712] isr        1101 key:  result_type  ,value:  xml  
+[2015/12/04 15:00:37 712] isr        1101 key:  result_encoding  ,value:  utf-8  
+[2015/12/04 15:00:37 713] isr        1150 cloud params:  asr_res_path=fo|res/asr/common.jet,auf=audio/L16;rate=16000,grm_build_path=res/asr/GrmBuilld,rst=xml,rse=utf-8  
+[2015/12/04 15:00:37 713] isr        1151 compatible params:  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=command,result_type=xml,result_encoding=utf-8  
+[2015/12/04 15:00:37 713] isr        1157 use cloud_grammar in params!  nil  
+[2015/12/04 15:00:37 713] isr        1167 engine_type_setting:  local  
+[2015/12/04 15:00:37 713] isr        1050 judgeMixedTimeout mixed_timeout:  2000  
+[2015/12/04 15:00:37 713] isr        1000 paramVADAnalysis [in]  
+[2015/12/04 15:00:37 713] isr        986  vadOnAue| aue:   nil  
+[2015/12/04 15:00:37 713] isr        1020 vad_enable :  true  
+[2015/12/04 15:00:37 713] isr        1035 vad_timeout :  10000  
+[2015/12/04 15:00:37 713] isr        1036 vad_speech_tail :  2000  
+[2015/12/04 15:00:37 713] isr        845  EnableVAD [in]  
+[2015/12/04 15:00:37 714] isr        869  vad enabled!  2000  10000  
+[2015/12/04 15:00:37 714] isr        872  EnableVAD [out]  
+[2015/12/04 15:00:37 714] isr        1043 paramVADAnalysis [out] | ret =  0  
+[2015/12/04 15:00:37 714] isr        1235 cur_engine_type =   local  
+[2015/12/04 15:00:37 717] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:37 718] isr        1580 6400  1  
+[2015/12/04 15:00:37 718] isr        1584 once_bytes:   6400  
+[2015/12/04 15:00:37 723] isr        804  [aud] speech start  
+[2015/12/04 15:00:37 868] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:37 868] isr        1580 6400  2  
+[2015/12/04 15:00:37 870] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:37 870] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:38 018] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:38 018] isr        1580 6400  2  
+[2015/12/04 15:00:38 021] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:38 021] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:38 169] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:38 169] isr        1580 6400  2  
+[2015/12/04 15:00:38 174] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:38 174] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:38 319] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:38 319] isr        1580 6400  2  
+[2015/12/04 15:00:38 322] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:38 322] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:38 470] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:38 470] isr        1580 6400  2  
+[2015/12/04 15:00:38 475] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:38 475] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:38 620] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:38 620] isr        1580 6400  2  
+[2015/12/04 15:00:38 624] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:38 625] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:38 771] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:38 771] isr        1580 6400  2  
+[2015/12/04 15:00:38 774] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:38 774] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:38 921] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:38 922] isr        1580 6400  2  
+[2015/12/04 15:00:38 926] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:38 927] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:39 072] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:39 072] isr        1580 6400  2  
+[2015/12/04 15:00:39 075] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:39 075] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:39 223] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:39 223] isr        1580 6400  2  
+[2015/12/04 15:00:39 227] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:39 227] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:39 373] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:39 373] isr        1580 9644  2  
+[2015/12/04 15:00:39 378] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:39 378] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:39 379] isr        1293 lua audiowrite:  6400  
+[2015/12/04 15:00:39 379] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:39 524] isr        1570 ISR_MSG_AUW, engine_type =   local  
+[2015/12/04 15:00:39 524] isr        1580 0  4  
+[2015/12/04 15:00:39 525] isr        1293 lua audiowrite:  2560  
+[2015/12/04 15:00:39 525] isr        892  writelocalAudioFile  
+[2015/12/04 15:00:39 525] isr        811  [aud] speech end  
+[2015/12/04 15:00:39 526] isr        1628 ISR_MSG_GRSLT, engine_type =   local  
+[2015/12/04 15:00:39 526] isr        1364 0  nil  2  
+[2015/12/04 15:00:39 677] isr        1628 ISR_MSG_GRSLT, engine_type =   local  
+[2015/12/04 15:00:39 677] isr        1364 0  nil  2  
+[2015/12/04 15:00:39 717] isr        1085 ssb message processing timeout, send msg init to local from this  
+[2015/12/04 15:00:39 718] isr        620  esrMessageCallBack  ,msg=  430  param1=  nil  
+[2015/12/04 15:00:39 718] isr        657  ssb msg processed!  
+[2015/12/04 15:00:39 766] isr        620  esrMessageCallBack  ,msg=  501  param1=  3  
+[2015/12/04 15:00:39 767] isr        620  esrMessageCallBack  ,msg=  501  param1=  1  
+[2015/12/04 15:00:39 769] isr        620  esrMessageCallBack  ,msg=  501  param1=  2  
+[2015/12/04 15:00:39 769] isr        620  esrMessageCallBack  ,msg=  406  param1=  nil  
+[2015/12/04 15:00:39 776] isr        620  esrMessageCallBack  ,msg=  404  param1=  nil  
+[2015/12/04 15:00:39 827] isr        1628 ISR_MSG_GRSLT, engine_type =   local  
+[2015/12/04 15:00:39 827] isr        1364 0  nil  2  
+[2015/12/04 15:00:39 894] isr        620  esrMessageCallBack  ,msg=  nil  param1=  nil  
+[2015/12/04 15:00:39 895] isr        620  esrMessageCallBack  ,msg=  407  param1=  udata(95eac34) 
+[2015/12/04 15:00:39 895] isr        428  processResult call:  local  udata(95eac34) 36  2  
+[2015/12/04 15:00:39 895] isr        433  result is :  <?xml version='1.0' encoding='utf-8' standalone='yes' ?><nlp>
+  <version>1.1</version>
+  <rawtext>下周天气怎样</rawtext>
+  <confidence>36</confidence>
+  <engine>local</engine>
+  <result>
+    <focus>date|iweather</focus>
+    <confidence>0|0</confidence>
+    <object>
+      <date id="65535">下周</date>
+      <iweather id="65535">天气怎样</iweather>
+    </object>
+  </result>
+</nlp>
+  2  
+[2015/12/04 15:00:39 895] isr        620  esrMessageCallBack  ,msg=  408  param1=  nil  
+[2015/12/04 15:00:39 895] isr        648  local session recognized end!  
+[2015/12/04 15:00:39 978] isr        1628 ISR_MSG_GRSLT, engine_type =   local  
+[2015/12/04 15:00:39 978] isr        1364 0  udata(95eac34) 5  
+[2015/12/04 15:00:40 128] isr        1632 ISR_MSG_SSE, engine_type =   local  
+[2015/12/04 15:00:40 128] isr        1428 ISRSessionEnd() [in]  
+[2015/12/04 15:00:40 128] isr        1443 endLocalSession() [in]  
+[2015/12/04 15:00:40 129] isr        259  local_plog_process  
+[2015/12/04 15:00:40 129] isr        211  collect_plog_data  
+[2015/12/04 15:00:40 130] isr        1553 isr unload!  
+[2015/12/04 15:00:40 131] isr        907  open audio file close  

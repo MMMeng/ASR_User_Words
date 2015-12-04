@@ -101,6 +101,7 @@ trigger_EXTERNAL_OBJECTS =
 /home/turtlebot2/ros_ws/devel/lib/speechrecog/trigger: /usr/lib/i386-linux-gnu/libboost_thread.so
 /home/turtlebot2/ros_ws/devel/lib/speechrecog/trigger: /usr/lib/i386-linux-gnu/libpthread.so
 /home/turtlebot2/ros_ws/devel/lib/speechrecog/trigger: /usr/lib/i386-linux-gnu/libconsole_bridge.so
+/home/turtlebot2/ros_ws/devel/lib/speechrecog/trigger: /home/turtlebot2/ros_ws/src/speechrecog/include/speechrecog/libmsc.so
 /home/turtlebot2/ros_ws/devel/lib/speechrecog/trigger: speechrecog/CMakeFiles/trigger.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/turtlebot2/ros_ws/devel/lib/speechrecog/trigger"
 	cd /home/turtlebot2/ros_ws/build/speechrecog && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trigger.dir/link.txt --verbose=$(VERBOSE)

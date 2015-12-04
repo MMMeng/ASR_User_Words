@@ -103,7 +103,7 @@ catkin_package(
   INCLUDE_DIRS include
   LIBRARIES speechrecog
   CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
-  DEPENDS system_lib
+  DEPENDS system_lib lasound
 )
 
 ###########
@@ -145,6 +145,9 @@ include_directories(
  )
 
  target_link_libraries(recognizer /home/turtlebot2/ros_ws/src/speechrecog/include/speechrecog/libmsc.so)
+ target_link_libraries(trigger /home/turtlebot2/ros_ws/src/speechrecog/include/speechrecog/libmsc.so)
+ target_link_libraries(recognizer -lasound)
+ target_link_libraries(trigger -lasound)
 
 #############
 ## Install ##

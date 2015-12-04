@@ -1,27 +1,27 @@
 ============================================================
-Time  2015/11/27 15:21:27 092 
+Time  2015/12/04 15:00:32 372 
 ============================================================
-[2015/11/27 15:21:27 092] grm_lex    453  grm_lex loaded!  
-[2015/11/27 15:21:27 092] grm_lex    471  SYS_MSG_REGCB param0 =   msp_status_cb  param1 =  func(af80fc60) 
-[2015/11/27 15:21:27 092] grm_lex    471  SYS_MSG_REGCB param0 =   grmMessageCallBackC  param1 =  func(af8118a0) 
-[2015/11/27 15:21:27 092] grm_lex    532  last gc at  1448608887  
-[2015/11/27 15:21:27 092] grm_lex    476  ISR_MSG_BUILDGRAMMAR  
-[2015/11/27 15:21:27 092] grm_lex    491  func(af8118a0) 
-[2015/11/27 15:21:27 092] grm_lex    202  ASRBuildGrammar() [in]  bnf  engine_type = local, 		asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, 		grm_build_path = res/asr/GrmBuilld,   
-[2015/11/27 15:21:27 092] grm_lex    212  key:  engine_type  ,value:  local  
-[2015/11/27 15:21:27 092] grm_lex    212  key:  asr_res_path  ,value:  fo|res/asr/common.jet  
-[2015/11/27 15:21:27 092] grm_lex    212  key:  sample_rate  ,value:  16000  
-[2015/11/27 15:21:27 092] grm_lex    212  key:  grm_build_path  ,value:  res/asr/GrmBuilld  
-[2015/11/27 15:21:27 092] grm_lex    229  engine_type =   local  
-[2015/11/27 15:21:27 093] grm_lex    240  text_encoding =   nil  
-[2015/11/27 15:21:27 093] grm_lex    256  buildGrammar() [in] engine_type == ENG_LOCAL  
-[2015/11/27 15:21:27 094] grm_lex    263  buildGrammar() [out]  
-[2015/11/27 15:21:27 094] grm_lex    497  ASR_MSG_BUILDGRAMMAR ret =   0  
-[2015/11/27 15:21:27 124] grm_lex    178  localServiceCB [in]  
-[2015/11/27 15:21:27 124] grm_lex    126  grmMessageCallBack [in]  
-[2015/11/27 15:21:27 124] grm_lex    127  0  call  
-[2015/11/27 15:21:27 125] grm_lex    140  grammarId:   call  
-[2015/11/27 15:21:35 542] grm_lex    460  SYS_MSG_SHUTDOWN  
-[2015/11/27 15:21:35 542] grm_lex    105  processRetCode:  10126  
-[2015/11/27 15:21:35 542] grm_lex    126  grmMessageCallBack [in]  
-[2015/11/27 15:21:35 543] grm_lex    127  10126  nil  
+[2015/12/04 15:00:32 372] grm_lex    453  grm_lex loaded!  
+[2015/12/04 15:00:32 372] grm_lex    471  SYS_MSG_REGCB param0 =   msp_status_cb  param1 =  func(af60fc60) 
+[2015/12/04 15:00:32 372] grm_lex    471  SYS_MSG_REGCB param0 =   grmMessageCallBackC  param1 =  func(af6118a0) 
+[2015/12/04 15:00:32 372] grm_lex    532  last gc at  1449212432  
+[2015/12/04 15:00:32 372] grm_lex    476  ISR_MSG_BUILDGRAMMAR  
+[2015/12/04 15:00:32 372] grm_lex    491  func(af6118a0) 
+[2015/12/04 15:00:32 372] grm_lex    202  ASRBuildGrammar() [in]  bnf  engine_type = local, 		asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, 		grm_build_path = res/asr/GrmBuilld,   
+[2015/12/04 15:00:32 373] grm_lex    212  key:  engine_type  ,value:  local  
+[2015/12/04 15:00:32 373] grm_lex    212  key:  asr_res_path  ,value:  fo|res/asr/common.jet  
+[2015/12/04 15:00:32 373] grm_lex    212  key:  sample_rate  ,value:  16000  
+[2015/12/04 15:00:32 373] grm_lex    212  key:  grm_build_path  ,value:  res/asr/GrmBuilld  
+[2015/12/04 15:00:32 373] grm_lex    229  engine_type =   local  
+[2015/12/04 15:00:32 373] grm_lex    240  text_encoding =   nil  
+[2015/12/04 15:00:32 373] grm_lex    256  buildGrammar() [in] engine_type == ENG_LOCAL  
+[2015/12/04 15:00:32 374] grm_lex    263  buildGrammar() [out]  
+[2015/12/04 15:00:32 374] grm_lex    497  ASR_MSG_BUILDGRAMMAR ret =   0  
+[2015/12/04 15:00:32 445] grm_lex    178  localServiceCB [in]  
+[2015/12/04 15:00:32 445] grm_lex    126  grmMessageCallBack [in]  
+[2015/12/04 15:00:32 445] grm_lex    127  0  command  
+[2015/12/04 15:00:32 445] grm_lex    140  grammarId:   command  
+[2015/12/04 15:00:41 186] grm_lex    460  SYS_MSG_SHUTDOWN  
+[2015/12/04 15:00:41 186] grm_lex    105  processRetCode:  10126  
+[2015/12/04 15:00:41 186] grm_lex    126  grmMessageCallBack [in]  
+[2015/12/04 15:00:41 186] grm_lex    127  10126  nil  

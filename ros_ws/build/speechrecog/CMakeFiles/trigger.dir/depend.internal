@@ -5,7 +5,15 @@ speechrecog/CMakeFiles/trigger.dir/src/trigger.cpp.o
  /home/turtlebot2/ros_ws/devel/include/speechrecog/Command.h
  /home/turtlebot2/ros_ws/devel/include/speechrecog/CommandRequest.h
  /home/turtlebot2/ros_ws/devel/include/speechrecog/CommandResponse.h
+ /home/turtlebot2/ros_ws/devel/include/speechrecog/msp_cmn.h
+ /home/turtlebot2/ros_ws/devel/include/speechrecog/msp_errors.h
+ /home/turtlebot2/ros_ws/devel/include/speechrecog/msp_types.h
+ /home/turtlebot2/ros_ws/devel/include/speechrecog/qtts.h
+ /home/turtlebot2/ros_ws/src/speechrecog/src/sndwav_common.c
+ /home/turtlebot2/ros_ws/src/speechrecog/src/sndwav_common.h
  /home/turtlebot2/ros_ws/src/speechrecog/src/trigger.cpp
+ /home/turtlebot2/ros_ws/src/speechrecog/src/wav_parser.c
+ /home/turtlebot2/ros_ws/src/speechrecog/src/wav_parser.h
  /opt/ros/indigo/include/XmlRpcDecl.h
  /opt/ros/indigo/include/XmlRpcValue.h
  /opt/ros/indigo/include/ros/advertise_options.h

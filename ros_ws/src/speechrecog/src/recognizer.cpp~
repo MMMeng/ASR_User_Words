@@ -13,6 +13,33 @@
 #include <errno.h>
 #include <unistd.h>
 
+#include <stdio.h> 
+#include <malloc.h> 
+#include <unistd.h> 
+#include <stdlib.h> 
+#include <string.h> 
+#include <getopt.h> 
+#include <fcntl.h> 
+#include <ctype.h> 
+#include <errno.h> 
+#include <limits.h> 
+#include <time.h> 
+#include <locale.h> 
+#include <sys/unistd.h> 
+#include <sys/stat.h> 
+#include <sys/types.h> 
+#include <alsa/asoundlib.h> 
+#include <assert.h> 
+#include "wav_parser.h" 
+#include "wav_parser.c"
+#include "sndwav_common.h"
+#include "sndwav_common.c" 
+
+#define DEFAULT_CHANNELS         (1) 
+#define DEFAULT_SAMPLE_RATE      (8000) 
+#define DEFAULT_SAMPLE_LENGTH    (16) 
+#define DEFAULT_DURATION_TIME    (5) //默认时长5s 
+
 #define SAMPLE_RATE_16K     (16000)
 #define SAMPLE_RATE_8K      (8000)
 #define MAX_GRAMMARID_LEN   (32)
@@ -20,9 +47,10 @@
 
 const char * ASR_RES_PATH        = "fo|res/asr/common.jet"; //离线语法识别资源路径
 const char * GRM_BUILD_PATH      = "res/asr/GrmBuilld"; //构建离线语法识别网络生成数据保存路径
-const char * GRM_FILE            = "/home/turtlebot2/ros_ws/src/speechrecog/src/call.bnf"; //构建离线识别语法网络所用的语法文件
-//const char * LEX_NAME            = "contact"; //更新离线识别语法的contact槽（语法文件为此示例中使用的call.bnf）
+const char * GRM_FILE            = "/home/turtlebot2/ros_ws/bin/command.bnf"; //构建离线识别语法网络所用的语法文件
 
+char * filename="/home/turtlebot2/ros_ws/bin/wav/recordfile.wav";
+const char *rec_rslt= NULL;
 typedef struct _UserData {
 	int     build_fini; //标识语法构建是否完成
 	int     update_fini; //标识更新词典是否完成
@@ -33,7 +61,121 @@ typedef struct _UserData {
 const char *get_audio_file(void); //选择进行离线语法识别的语音文件
 int build_grammar(UserData *udata); //构建离线识别语法网络
 int run_asr(UserData *udata); //进行离线语法识别
+int SNDWAV_PrepareWAVParams(WAVContainer_t *wav) ;
+void SNDWAV_Record(SNDPCMContainer_t *sndpcm, WAVContainer_t *wav, int fd);
+int record();//录音
+/////////////////////////////录音代码///////////////////////////
+ int SNDWAV_PrepareWAVParams(WAVContainer_t *wav) 
+    { 
+        assert(wav); 
+     	//硬件参数赋值
+        uint16_t channels = DEFAULT_CHANNELS; 
+        uint16_t sample_rate = DEFAULT_SAMPLE_RATE; 
+        uint16_t sample_length = DEFAULT_SAMPLE_LENGTH; 
+        uint32_t duration_time = DEFAULT_DURATION_TIME; 
+     
+        wav->header.magic = WAV_RIFF; 
+        wav->header.type = WAV_WAVE; 
+        wav->format.magic = WAV_FMT; 
+        wav->format.fmt_size = LE_INT(16); 
+        wav->format.format = LE_SHORT(WAV_FMT_PCM); 
+        wav->chunk.type = WAV_DATA; 
+     
+        //自定义 
+        wav->format.channels = LE_SHORT(channels); 
+        wav->format.sample_rate = LE_INT(sample_rate); 
+        wav->format.sample_length = LE_SHORT(sample_length); 
+     
+    wav->format.blocks_align = LE_SHORT(channels * sample_length / 8); 
+    wav->format.bytes_p_second = LE_INT((uint16_t)(wav->format.blocks_align) * sample_rate); 
+         
+    wav->chunk.length = LE_INT(duration_time * (uint32_t)(wav->format.bytes_p_second)); 
+    wav->header.length = LE_INT((uint32_t)(wav->chunk.length) + sizeof(wav->chunk) + sizeof(wav->format) + sizeof(wav->header) - 8); 
+     
+        return 0; 
+    } 
 
+void SNDWAV_Record(SNDPCMContainer_t *sndpcm, WAVContainer_t *wav, int fd) 
+    { 
+        off64_t rest; 
+        size_t c, frame_size; 
+         
+        if (WAV_WriteHeader(fd, wav) < 0) { 
+            exit(-1); 
+        } 
+     
+        rest = wav->chunk.length; 
+        while (rest > 0) { 
+            c = (rest <= (off64_t)sndpcm->chunk_bytes) ? (size_t)rest : sndpcm->chunk_bytes; 
+            frame_size = c * 8 / sndpcm->bits_per_frame; 
+            if (SNDWAV_ReadPcm(sndpcm, frame_size) != frame_size) 
+                break; 
+             
+            if (write(fd, sndpcm->data_buf, c) != c) { 
+                fprintf(stderr, "Error SNDWAV_Record[write]/n"); 
+                exit(-1); 
+            } 
+     
+            rest -= c; 
+        } 
+    }
+ int record()
+{
+      char *devicename = "default"; 
+        int fd; 
+        WAVContainer_t wav; 
+        SNDPCMContainer_t record; 
+         
+        memset(&record, 0x0, sizeof(record)); 
+     
+        remove(filename); 
+        if ((fd = open(filename, O_WRONLY | O_CREAT, 0644)) == -1) { 
+            fprintf(stderr, "Error open: [%s]/n", filename); 
+            return false; 
+        } 
+     
+        if (snd_output_stdio_attach(&record.log, stderr, 0) < 0) { 
+            fprintf(stderr, "Error snd_output_stdio_attach/n"); 
+            goto Err; 
+        } 
+     
+        if (snd_pcm_open(&record.handle, devicename, SND_PCM_STREAM_CAPTURE, 0) < 0) { 
+            fprintf(stderr, "Error snd_pcm_open [ %s]/n", devicename); 
+            goto Err; 
+        } 
+     
+        if (SNDWAV_PrepareWAVParams(&wav) < 0) { 
+            fprintf(stderr, "Error SNDWAV_PrepareWAVParams/n"); 
+            goto Err; 
+        } 
+     
+        if (SNDWAV_SetParams(&record, &wav) < 0) { 
+            fprintf(stderr, "Error set_snd_pcm_params/n"); 
+            goto Err; 
+        } 
+        snd_pcm_dump(record.handle, record.log); 
+     
+        SNDWAV_Record(&record, &wav, fd); 
+     
+        snd_pcm_drain(record.handle); 
+     
+        close(fd); 
+        free(record.data_buf); 
+        snd_output_close(record.log); 
+        snd_pcm_close(record.handle); 
+        return true; 
+     
+    Err: 
+        close(fd); 
+        remove(filename); 
+        if (record.data_buf) free(record.data_buf); 
+        if (record.log) snd_output_close(record.log); 
+        if (record.handle) snd_pcm_close(record.handle); 
+        return false; 
+} 
+
+
+/////////////////////////////录音代码///////////////////////////
 const char* get_audio_file(void)
 {
 	char key = 0;
@@ -128,9 +270,9 @@ int build_grammar(UserData *udata)
 int run_asr(UserData *udata)
 {
 	char asr_params[MAX_PARAMS_LEN]    = {NULL};
-	const char *rec_rslt               = NULL;
+	//const char *rec_rslt               = NULL;
 	const char *session_id             = NULL;
-	const char *asr_audiof             = NULL;
+	//const char *asr_audiof             = NULL;
 	FILE *f_pcm                        = NULL;
 	char *pcm_data                     = NULL;
 	long pcm_count                     = 0;
@@ -142,15 +284,24 @@ int run_asr(UserData *udata)
 	int rss_status                     = MSP_REC_STATUS_INCOMPLETE;
 	int errcode                        = -1;
 
-	asr_audiof = get_audio_file();
-	f_pcm = fopen(asr_audiof, "rb");
+	
+        if (record())
+           printf("Finish recording!!\n");
+        else
+           {
+            printf("Fail to record!\n");
+            return 1;
+           }
+         
+       // asr_audiof = filename;
+	f_pcm = fopen(filename, "rb");
 	if (NULL == f_pcm) {
 		printf("打开\"%s\"失败！[%s]\n", f_pcm, strerror(errno));
 		goto run_error;
 	}
 	fseek(f_pcm, 0, SEEK_END);
 	pcm_size = ftell(f_pcm);
-	fseek(f_pcm, 0, SEEK_SET);//如果知道wav文件头的长度,就可以从wav文件中提取pcm数据,对吧?
+	fseek(f_pcm, 0, SEEK_SET);
 	pcm_data = (char *)malloc(pcm_size);
 	if (NULL == pcm_data)
 		goto run_error;
@@ -271,6 +422,11 @@ bool asr(speechrecog::Command::Request  &req,
 		printf("离线语法识别出错: %d \n", ret);
 		goto exit;
 	}
+        //把识别结果反馈给trigger
+        //res.command=rec_rslt;//这里需要从rec_rslt中提取与所需的关键substring,比如"打电话"\"丁伟";
+          const char* tempText;
+          tempText="收到指令";
+          res.command=tempText;
 
 exit:
 	MSPLogout();
