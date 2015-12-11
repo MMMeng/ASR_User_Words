@@ -1505,8 +1505,8 @@ clean: speechrecog/CMakeFiles/speechrecog_gencpp.dir/clean
 # Target rules for target speechrecog/CMakeFiles/speechrecog_generate_messages.dir
 
 # All Build rule for target.
-speechrecog/CMakeFiles/speechrecog_generate_messages.dir/all: speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/all
 speechrecog/CMakeFiles/speechrecog_generate_messages.dir/all: speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/all
+speechrecog/CMakeFiles/speechrecog_generate_messages.dir/all: speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/all
 speechrecog/CMakeFiles/speechrecog_generate_messages.dir/all: speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir/all
 	$(MAKE) -f speechrecog/CMakeFiles/speechrecog_generate_messages.dir/build.make speechrecog/CMakeFiles/speechrecog_generate_messages.dir/depend
 	$(MAKE) -f speechrecog/CMakeFiles/speechrecog_generate_messages.dir/build.make speechrecog/CMakeFiles/speechrecog_generate_messages.dir/build
@@ -1542,8 +1542,8 @@ clean: speechrecog/CMakeFiles/speechrecog_generate_messages.dir/clean
 # Target rules for target speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir
 
 # All Build rule for target.
-speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/all: speechrecog/CMakeFiles/_speechrecog_generate_messages_check_deps_Command.dir/all
 speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/all: speechrecog/CMakeFiles/_speechrecog_generate_messages_check_deps_Command.dir/all
 	$(MAKE) -f speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/build.make speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/depend
 	$(MAKE) -f speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/build.make speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/ros_ws/build/CMakeFiles  19
@@ -1574,8 +1574,8 @@ clean: speechrecog/CMakeFiles/speechrecog_generate_messages_cpp.dir/clean
 # Target rules for target speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir
 
 # All Build rule for target.
-speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/all: speechrecog/CMakeFiles/_speechrecog_generate_messages_check_deps_Command.dir/all
 speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/all: speechrecog/CMakeFiles/_speechrecog_generate_messages_check_deps_Command.dir/all
 	$(MAKE) -f speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/build.make speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/depend
 	$(MAKE) -f speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/build.make speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/ros_ws/build/CMakeFiles  20
@@ -1606,8 +1606,8 @@ clean: speechrecog/CMakeFiles/speechrecog_generate_messages_lisp.dir/clean
 # Target rules for target speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir
 
 # All Build rule for target.
-speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir/all: speechrecog/CMakeFiles/_speechrecog_generate_messages_check_deps_Command.dir/all
 speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir/all: asr_usercommand/CMakeFiles/std_msgs_generate_messages_py.dir/all
+speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir/all: speechrecog/CMakeFiles/_speechrecog_generate_messages_check_deps_Command.dir/all
 	$(MAKE) -f speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir/build.make speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir/depend
 	$(MAKE) -f speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir/build.make speechrecog/CMakeFiles/speechrecog_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot2/ros_ws/build/CMakeFiles  21 22

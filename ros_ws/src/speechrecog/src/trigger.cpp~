@@ -2,8 +2,8 @@
 #include "speechrecog/Command.h"
 #include "std_msgs/String.h"
 
-
 #include <stdio.h>
+#include <signal.h>
 #include <malloc.h> 
 #include <unistd.h>
 #include <stdlib.h>
@@ -20,6 +20,10 @@
 #include <sys/types.h> 
 #include <alsa/asoundlib.h> 
 #include <assert.h> 
+#include <linux/input.h>
+#include <termios.h>
+#include <pthread.h>
+
 #include "wav_parser.h" 
 #include "sndwav_common.h"
 #include "wav_parser.c"
@@ -31,7 +35,12 @@
 
 typedef int SR_DWORD;
 typedef short int SR_WORD ;
+
 const char*  filename = "/home/turtlebot2/ros_ws/bin/wav/text_to_speech.wav";
+const char*  shengdange = "/home/turtlebot2/ros_ws/bin/wav/铃儿响叮当.wav";
+const char*   xiaopingguo= "/home/turtlebot2/ros_ws/bin/wav/小苹果.wav";
+
+int stop_record = 0;
 //音频头部格式
 struct wave_pcm_hdr
 {
@@ -187,7 +196,101 @@ exit:
         } 
         return result; 
     } 
+    int readkey()
+    {
+	fd_set rfds, rs;
+	struct timeval tv;
 
+	int i, r, q, j;
+	struct termios saveterm, nt;
+	int fd = 0;
+	unsigned char c, buf[32], str[8];
+
+	tcgetattr(fd, &saveterm);
+	nt = saveterm;
+
+	nt.c_lflag &= ~ECHO;
+	nt.c_lflag &= ~ISIG;
+	nt.c_lflag &= ~ICANON;
+
+	tcsetattr(fd, TCSANOW, &nt);
+
+	FD_ZERO(&rs);
+	FD_SET(fd, &rs);
+	tv.tv_sec = 0;
+	tv.tv_usec = 0;
+
+	i = 0;
+	q = 0;
+	while (1) {
+		read(fd, buf + i, 1);
+		//sprintf(str, "<X>", *(buf + i));
+                sprintf((char *)str, "<X>",(char *)*(buf + i));
+		i++;
+		if (i > 31) {
+			write(1, "Too many data\n", 14);
+			break;
+		}
+		write(1, str, 4);
+		r = select(fd + 1, &rfds, NULL, NULL, &tv);
+		if (r < 0) {
+			write(1, "select() error.\n", 16);
+			break;
+		}
+		if (r == 1)
+			continue;
+		//write(1, "\t", 1);
+		rfds = rs;
+		for (j = 0; j < i; j++) {
+			c = buf[j];
+			/*
+			switch (c) {
+			case 27:
+				write(1, "ESC ", 4);
+				break;
+			case 9:
+				write(1, "TAB ", 4);
+				break;
+			case 32:
+				write(1, "SPACE ", 6);
+				break;
+			default:
+				if (c >= 32 && c < 127)
+					write(1, buf + j, 1);
+				else
+					write(1, "CTRL ", 5);
+				break;
+			}*/
+		}
+		//write(1, "\n", 1);
+		if (buf[0] == 3 ) {
+			stop_record = 1;
+			break;
+			/*
+			if (q == 0)
+				q = 1;
+			else
+				break;
+				*/
+		} else
+			q = 0;
+		i = 0;
+	}
+
+	tcsetattr(fd, TCSANOW, &saveterm);
+	printf("\n");
+	return 0;
+
+}
+    void * print_message( void *ptr )
+    {
+			pthread_detach(pthread_self());//pthread_detach(pthread_self())，将状态改为unjoinable状态，确保资源的释放
+			static int g;
+			printf("%d\n", g++);
+			readkey();
+			pthread_exit(0) ;//pthread_exit时自动会被释放
+
+    }
         void SNDWAV_Play(SNDPCMContainer_t *sndpcm, WAVContainer_t *wav, int fd) 
     { 
         int load, ret; 
@@ -196,7 +299,7 @@ exit:
         off64_t count = LE_INT(wav->chunk.length); 
      
         load = 0; 
-        while (written < count) { 
+        while ((written < count)&&(!stop_record)) { 
             /* Must read [chunk_bytes] bytes data enough. */ 
             do { 
                 c = count - written; 
@@ -227,6 +330,7 @@ exit:
             load = 0; 
         } 
     }
+
 int run_wav_play(const char* filename)
 {
 	 //char *filename; 
@@ -235,6 +339,8 @@ int run_wav_play(const char* filename)
                WAVContainer_t wav; 
                SNDPCMContainer_t playback;
 
+          pthread_t thread_id;
+          pthread_create( &thread_id, NULL, print_message, (void *)NULL );// 一个线程默认的状态是joinable
                memset(&playback, 0x0, sizeof(playback)); 
                fd = open(filename, O_RDONLY);
                if (fd < 0) { 
@@ -263,11 +369,12 @@ int run_wav_play(const char* filename)
                } 
 
                snd_pcm_dump(playback.handle, playback.log); 
-     
-               SNDWAV_Play(&playback, &wav, fd); 
-     
-               snd_pcm_drain(playback.handle); 
-     
+
+               SNDWAV_Play(&playback, &wav, fd);
+                
+               snd_pcm_drain(playback.handle);
+               
+
                close(fd); 
                free(playback.data_buf); 
                snd_output_close(playback.log); 
@@ -287,21 +394,35 @@ int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "trigger");
 	ros::NodeHandle n;
-              ros::ServiceClient client = n.serviceClient<speechrecog::Command>("command_recognize");
+        ros::ServiceClient client = n.serviceClient<speechrecog::Command>("command_recognize");
+        speechrecog::Command srv;
+        srv.request.num=0;//默认将其设置为0，以触发server服务；
 
-              speechrecog::Command srv;
-              srv.request.num=0;//默认将其设置为0，以触发server服务；
+
+              while(ros::ok())
+{
               if (srv.request.num== 0)
               {
               	if (client.call(srv))
               	{
-              		ROS_INFO("Success to call service user_command!");
-                                           printf("The recognition result is: %s\n",srv.response.command.c_str());
+              		                   ROS_INFO("Success to call service user_command!");
+                                           printf("The recognition result is: %s \n",srv.response.command.c_str());
                                            const char* text;
                                            text=srv.response.command.c_str();
+                                           printf("%s\n", text);
                                            run_tts(text);
-                                           printf("\n Finish TTS!\n");
                                            run_wav_play(filename);
+                                           const char* flag1;
+                                           const char* flag2;
+                                           flag1="圣诞歌";
+                                           flag2="小苹果";
+                                           if (strstr(text,flag1)){
+                                               run_wav_play(shengdange);
+                                            }
+                                           else if(strstr(text,flag2)){
+                                               run_wav_play(xiaopingguo);
+                                           } 
+                                           printf("\n请求服务完毕!\n");
                  }
               	else
               	{
@@ -313,5 +434,7 @@ int main(int argc, char **argv)
               {
               	ROS_INFO("Failed to trigger the service, Please set the requeset.num = 0 !");
               }
+}
+
 	return 0;
 }

@@ -95,6 +95,8 @@ std_msgs/String.h
 /home/turtlebot2/ros_ws/src/speechrecog/src/std_msgs/String.h
 stdio.h
 -
+signal.h
+-
 malloc.h
 -
 unistd.h
@@ -126,6 +128,12 @@ sys/types.h
 alsa/asoundlib.h
 -
 assert.h
+-
+linux/input.h
+-
+termios.h
+-
+pthread.h
 -
 wav_parser.h
 /home/turtlebot2/ros_ws/src/speechrecog/src/wav_parser.h

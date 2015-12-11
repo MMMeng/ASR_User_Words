@@ -50,7 +50,13 @@ const char * GRM_BUILD_PATH      = "res/asr/GrmBuilld"; //构建离线语法识�
 const char * GRM_FILE            = "/home/turtlebot2/ros_ws/bin/command.bnf"; //构建离线识别语法网络所用的语法文件
 
 char * filename="/home/turtlebot2/ros_ws/bin/wav/recordfile.wav";
-const char *rec_rslt= NULL;
+const char *rec_rslt = NULL;
+bool flag1=false;
+bool flag2=false;
+const char* tmpt1="圣诞歌";
+const char* tmpt2="小苹果";
+      
+         
 typedef struct _UserData {
 	int     build_fini; //标识语法构建是否完成
 	int     update_fini; //标识更新词典是否完成
@@ -370,9 +376,16 @@ int run_asr(UserData *udata)
 	printf("\n识别结束：\n");
 	printf("=============================================================\n");
 	if (NULL != rec_rslt)
-		printf("%s\n", rec_rslt);
+             {
+	 printf("%s\n", rec_rslt);
+
+               if(strstr(rec_rslt,tmpt1))
+                    flag1=true;
+               else if (strstr(rec_rslt,tmpt2))
+                    flag2=true;
+             }
 	else
-		printf("没有识别结果！\n");
+	      printf("没有识别结果！\n");
 	printf("=============================================================\n");
 
 	goto run_exit;
@@ -422,11 +435,15 @@ bool asr(speechrecog::Command::Request  &req,
 		printf("离线语法识别出错: %d \n", ret);
 		goto exit;
 	}
-        //把识别结果反馈给trigger
-        //res.command=rec_rslt;//这里需要从rec_rslt中提取与所需的关键substring,比如"打电话"\"丁伟";
-          const char* tempText;
-          tempText="收到指令";
-          res.command=tempText;
+
+/////////////////////////////将识别结果rec_rslt传递给trigger//////////////////////////////////////////
+
+         res.command=rec_rslt;
+         if(flag1)
+           res.command=tmpt1;
+         if(flag2)
+           res.command=tmpt2;
+  
 
 exit:
 	MSPLogout();
